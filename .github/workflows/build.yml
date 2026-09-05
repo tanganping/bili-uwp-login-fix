@@ -5,23 +5,12 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2022
     timeout-minutes: 120
     steps:
       - name: Fetch official source
         shell: pwsh
         run: git clone --depth 1 https://github.com/Richasy/Bili.Uwp.git src
-
-      - name: Debug tree
-        shell: pwsh
-        run: |
-          Write-Host "PWD: $(Get-Location)"
-          Write-Host "GITHUB_WORKSPACE: $env:GITHUB_WORKSPACE"
-          Get-ChildItem | Select-Object Name | Out-String
-          Write-Host "--- src content ---"
-          Get-ChildItem src -ErrorAction SilentlyContinue | Select-Object Name | Out-String
-          Write-Host "--- test path ---"
-          Test-Path src/Models/Models.App/Constants/ServiceConstants.cs
 
       - name: Apply login fix (5 patches)
         shell: python
