@@ -13,7 +13,6 @@ jobs:
         with:
           repository: Richasy/Bili.Uwp
           ref: main
-          path: src
 
       - name: Apply login fix (5 patches)
         shell: python
