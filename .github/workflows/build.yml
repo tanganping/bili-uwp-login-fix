@@ -51,9 +51,11 @@ jobs:
           $vsPath = & $vswhere -latest -property installationPath
           $setup = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\setup.exe"
           Write-Host "VS at: $vsPath"
-          $p = Start-Process -FilePath $setup -ArgumentList @('modify','--installPath',"$vsPath",'--add','Microsoft.VisualStudio.ComponentGroup.UWP.Support','--quiet','--norestart','--nocache') -Wait -PassThru
+          $log = "${{ github.workspace }}\vs_setup.log"
+          $args = "modify --installPath `"$vsPath`" --add Microsoft.VisualStudio.ComponentGroup.UWP.Support --quiet --norestart --nocache --log `"$log`""
+          $p = Start-Process -FilePath $setup -ArgumentList $args -Wait -PassThru
           Write-Host "setup exit code: $($p.ExitCode)"
-          if ($p.ExitCode -ne 0 -and $p.ExitCode -ne 3010) { exit 1 }
+          if ($p.ExitCode -ne 0 -and $p.ExitCode -ne 3010) { Get-Content $log -Tail 40 -ErrorAction SilentlyContinue; exit 1 }
 
       - name: Build (Release x64, sideload)
         shell: pwsh
