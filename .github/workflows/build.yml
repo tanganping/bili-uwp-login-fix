@@ -15,7 +15,9 @@ jobs:
       - name: Apply login fix (5 patches)
         shell: python
         run: |
-          import pathlib
+          import os, pathlib
+          root = pathlib.Path(os.environ["GITHUB_WORKSPACE"])
+          os.chdir(root)
           fixes = [
             ("src/Models/Models.App/Constants/ServiceConstants.cs",
              'Edg/92.0.902.62";',
