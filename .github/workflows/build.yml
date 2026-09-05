@@ -14,35 +14,14 @@ jobs:
           repository: Richasy/Bili.Uwp
           ref: main
 
-      - name: Apply login fix (5 patches)
-        shell: python
+      - name: Apply login fix
+        shell: pwsh
         run: |
-          import os, pathlib
-          root = pathlib.Path(os.environ["GITHUB_WORKSPACE"])
-          os.chdir(root)
-          fixes = [
-            ("src/Models/Models.App/Constants/ServiceConstants.cs",
-             'Edg/92.0.902.62";',
-             'Edg/92.0.902.62";\r\n\r\n        /// <summary>\r\n        /// iOS-style UA. Bilibili risk control rejects requests without User-Agent (HTTP 412), which broke login.\r\n        /// </summary>\r\n        public const string IOSUserAgentString = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1 bili-universal/73803300";'),
-            ("src/Lib/Lib.Implementation/HttpProvider/HttpProvider.Extension.cs",
-             'await Task.Run(async () =>',
-             'if (!request.Headers.UserAgent.Any())\r\n                {\r\n                    request.Headers.UserAgent.ParseAdd(ServiceConstants.IOSUserAgentString);\r\n                }\r\n\r\n                await Task.Run(async () =>'),
-            ("src/Lib/SignIn.Uwp/SignInDialog.xaml.cs",
-             'case -105:',
-             'case -105:\r\n                        case -3:'),
-            ("src/App/Resources/Strings/zh-Hans/Resources.resw",
-             '<value>登录失败，请稍后重试</value>',
-             '<value>登录失败，请使用扫码登录后重试</value>'),
-            ("Uwp.props",
-             '>10.0.22000.0<',
-             '>10.0.26100.0<'),
-          ]
-          for path, old, new in fixes:
-              p = pathlib.Path(path)
-              t = p.read_text(encoding="utf-8-sig")
-              assert t.count(old) == 1, "pattern not unique/found in %s (count=%d)" % (path, t.count(old))
-              p.write_text(t.replace(old, new, 1), encoding="utf-8-sig")
-          print("all 5 fixes applied")
+          $b64 = "ZGlmZiAtcnVOIGEvc3JjL0FwcC9SZXNvdXJjZXMvU3RyaW5ncy96aC1IYW5zL1Jlc291cmNlcy5yZXN3IGIvc3JjL0FwcC9SZXNvdXJjZXMvU3RyaW5ncy96aC1IYW5zL1Jlc291cmNlcy5yZXN3Ci0tLSBhL3NyYy9BcHAvUmVzb3VyY2VzL1N0cmluZ3MvemgtSGFucy9SZXNvdXJjZXMucmVzdwkyMDI2LTA5LTA1IDA5OjQ1OjMwLjM0ODU4NjAwMCArMDAwMAorKysgYi9zcmMvQXBwL1Jlc291cmNlcy9TdHJpbmdzL3poLUhhbnMvUmVzb3VyY2VzLnJlc3cJMjAyNi0wOS0wNSAwODoyODowMy4wMDAwMDAwMDAgKzAwMDAKQEAgLTgzNSw3ICs4MzUsNyBAQAogICAgIDx2YWx1ZT7nmbvlvZU8L3ZhbHVlPgogICA8L2RhdGE+CiAgIDxkYXRhIG5hbWU9IkxvZ2luRmFpbGVkIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KLSAgICA8dmFsdWU+55m75b2V5aSx6LSl77yM6K+356iN5ZCO6YeN6K+VPC92YWx1ZT4KKyAgICA8dmFsdWU+55m75b2V5aSx6LSl77yM6K+35L2/55So5omr56CB55m75b2V5ZCO6YeN6K+VPC92YWx1ZT4KICAgPC9kYXRhPgogICA8ZGF0YSBuYW1lPSJNYW51YWwiIHhtbDpzcGFjZT0icHJlc2VydmUiPgogICAgIDx2YWx1ZT7miYvliqg8L3ZhbHVlPgpkaWZmIC1ydU4gYS9zcmMvTGliL0xpYi5JbXBsZW1lbnRhdGlvbi9IdHRwUHJvdmlkZXIvSHR0cFByb3ZpZGVyLkV4dGVuc2lvbi5jcyBiL3NyYy9MaWIvTGliLkltcGxlbWVudGF0aW9uL0h0dHBQcm92aWRlci9IdHRwUHJvdmlkZXIuRXh0ZW5zaW9uLmNzCi0tLSBhL3NyYy9MaWIvTGliLkltcGxlbWVudGF0aW9uL0h0dHBQcm92aWRlci9IdHRwUHJvdmlkZXIuRXh0ZW5zaW9uLmNzCTIwMjYtMDktMDUgMDk6NDU6MzAuMzU0NTg2MDAwICswMDAwCisrKyBiL3NyYy9MaWIvTGliLkltcGxlbWVudGF0aW9uL0h0dHBQcm92aWRlci9IdHRwUHJvdmlkZXIuRXh0ZW5zaW9uLmNzCTIwMjYtMDktMDUgMDg6Mjc6NDEuMDAwMDAwMDAwICswMDAwCkBAIC00MSw2ICs0MSwxMiBAQAogICAgICAgICAgICAgSHR0cFJlc3BvbnNlTWVzc2FnZSByZXNwb25zZSA9IG51bGw7CiAgICAgICAgICAgICB0cnkKICAgICAgICAgICAgIHsKKyAgICAgICAgICAgICAgICAvLyBCIOermemjjuaOp+S8muaLpuaIque8uuWksSBVc2VyLUFnZW50IOeahOivt+axgig0MTIpLCDov5nph4zkuLrmnKrmmL7lvI/orr7nva4gVUEg55qE6K+35rGC6KGl5YWF6buY6K6kIFVBLgorICAgICAgICAgICAgICAgIGlmICghcmVxdWVzdC5IZWFkZXJzLlVzZXJBZ2VudC5BbnkoKSkKKyAgICAgICAgICAgICAgICB7CisgICAgICAgICAgICAgICAgICAgIHJlcXVlc3QuSGVhZGVycy5Vc2VyQWdlbnQuUGFyc2VBZGQoU2VydmljZUNvbnN0YW50cy5JT1NVc2VyQWdlbnRTdHJpbmcpOworICAgICAgICAgICAgICAgIH0KKwogICAgICAgICAgICAgICAgIGF3YWl0IFRhc2suUnVuKGFzeW5jICgpID0+CiAgICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICByZXNwb25zZSA9IGF3YWl0IEh0dHBDbGllbnQuU2VuZEFzeW5jKHJlcXVlc3QsIGNhbmNlbGxhdGlvblRva2VuKTsKZGlmZiAtcnVOIGEvc3JjL0xpYi9TaWduSW4uVXdwL1NpZ25JbkRpYWxvZy54YW1sLmNzIGIvc3JjL0xpYi9TaWduSW4uVXdwL1NpZ25JbkRpYWxvZy54YW1sLmNzCi0tLSBhL3NyYy9MaWIvU2lnbkluLlV3cC9TaWduSW5EaWFsb2cueGFtbC5jcwkyMDI2LTA5LTA1IDA5OjQ1OjMwLjM1OTU4NjAwMCArMDAwMAorKysgYi9zcmMvTGliL1NpZ25Jbi5Vd3AvU2lnbkluRGlhbG9nLnhhbWwuY3MJMjAyNi0wOS0wNSAwODoyNzo1NS4wMDAwMDAwMDAgKzAwMDAKQEAgLTE1MCw3ICsxNTAsOCBAQAogICAgICAgICAgICAgICAgICAgICBzd2l0Y2ggKHNlLkVycm9yLkNvZGUpCiAgICAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgICAgIGNhc2UgLTEwNToKLSAgICAgICAgICAgICAgICAgICAgICAgICAgICAvLyDpnIDopoHpqozor4HnoIHvvIzovazlhaXmiavnoIHnmbvlvZXmraXpqqQuCisgICAgICAgICAgICAgICAgICAgICAgICBjYXNlIC0zOgorICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8vIOmcgOimgemqjOivgeeggeaIlkLnq5nlt7LlhbPpl63ml6flr4bnoIHnmbvlvZXmjqXlj6MoLTMpLCDovazlhaXmiavnoIHnmbvlvZXmraXpqqQuCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgU2hvd0Vycm9yKExhbmd1YWdlTmFtZXMuTmVlZFFSTG9naW4pOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgIGF3YWl0IFN3aXRjaExvZ2luVHlwZUFzeW5jKExvZ2luVHlwZS5RUkNvZGUpOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJyZWFrOwpkaWZmIC1ydU4gYS9zcmMvTW9kZWxzL01vZGVscy5BcHAvQ29uc3RhbnRzL1NlcnZpY2VDb25zdGFudHMuY3MgYi9zcmMvTW9kZWxzL01vZGVscy5BcHAvQ29uc3RhbnRzL1NlcnZpY2VDb25zdGFudHMuY3MKLS0tIGEvc3JjL01vZGVscy9Nb2RlbHMuQXBwL0NvbnN0YW50cy9TZXJ2aWNlQ29uc3RhbnRzLmNzCTIwMjYtMDktMDUgMDk6NDU6MzAuMzYyNTg2MDAwICswMDAwCisrKyBiL3NyYy9Nb2RlbHMvTW9kZWxzLkFwcC9Db25zdGFudHMvU2VydmljZUNvbnN0YW50cy5jcwkyMDI2LTA5LTA1IDA4OjI3OjMyLjAwMDAwMDAwMCArMDAwMApAQCAtMTEsNiArMTEsMTEgQEAKICNwcmFnbWEgd2FybmluZyBkaXNhYmxlIFNBMTQwMSAvLyBGaWVsZHMgc2hvdWxkIGJlIHByaXZhdGUKICAgICAgICAgcHVibGljIGNvbnN0IHN0cmluZyBEZWZhdWx0QWNjZXB0U3RyaW5nID0gInRleHQvaHRtbCxhcHBsaWNhdGlvbi94aHRtbCt4bWwsYXBwbGljYXRpb24veG1sO3E9MC45LGltYWdlL3dlYnAsaW1hZ2UvYXBuZywqLyo7cT0wLjgsYXBwbGljYXRpb24vc2lnbmVkLWV4Y2hhbmdlO3Y9YjM7cT0wLjkiOwogICAgICAgICBwdWJsaWMgY29uc3Qgc3RyaW5nIERlZmF1bHRVc2VyQWdlbnRTdHJpbmcgPSAiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzkyLjAuNDUxNS4xMDcgU2FmYXJpLzUzNy4zNiBFZGcvOTIuMC45MDIuNjIiOworCisgICAgICAgIC8vLyA8c3VtbWFyeT4KKyAgICAgICAgLy8vIGlPUyDlrqLmiLfnq6/po47moLznmoQgVUEuIEIg56uZ6aOO5o6n5Lya5a+557y65aSxIFVzZXItQWdlbnQg55qE6K+35rGC55u05o6l6L+U5ZueIDQxMiwg5a+86Ie055m75b2V562J6K+35rGC5YWo6YOo5aSx6LSlLgorICAgICAgICAvLy8gPC9zdW1tYXJ5PgorICAgICAgICBwdWJsaWMgY29uc3Qgc3RyaW5nIElPU1VzZXJBZ2VudFN0cmluZyA9ICJNb3ppbGxhLzUuMCAoaVBob25lOyBDUFUgaVBob25lIE9TIDE3XzUgbGlrZSBNYWMgT1MgWCkgQXBwbGVXZWJLaXQvNjA1LjEuMTUgKEtIVE1MLCBsaWtlIEdlY2tvKSBWZXJzaW9uLzE3LjUgTW9iaWxlLzE1RTE0OCBTYWZhcmkvNjA0LjEgYmlsaS11bml2ZXJzYWwvNzM4MDMzMDAiOwogICAgICAgICBwdWJsaWMgY29uc3Qgc3RyaW5nIEJ1aWxkTnVtYmVyID0gIjU1MjA0MDAiOwogICAgICAgICBwdWJsaWMgY29uc3Qgc3RyaW5nIEF2ID0gImF2IjsKICAgICAgICAgcHVibGljIGNvbnN0IHN0cmluZyBCYW5ndW1pID0gImJhbmd1bWkiOwpkaWZmIC1ydU4gYS9Vd3AucHJvcHMgYi9Vd3AucHJvcHMKLS0tIGEvVXdwLnByb3BzCTIwMjYtMDktMDUgMDk6NDU6MzAuMjQ4NTg2MDAwICswMDAwCisrKyBiL1V3cC5wcm9wcwkyMDI2LTA5LTA1IDA5OjM3OjI0LjAwMDAwMDAwMCArMDAwMApAQCAtOCw3ICs4LDcgQEAKICAgICA8QXBwRGVzaWduZXJGb2xkZXI+UHJvcGVydGllczwvQXBwRGVzaWduZXJGb2xkZXI+CiAgICAgPERlZmF1bHRMYW5ndWFnZT5lbi1VUzwvRGVmYXVsdExhbmd1YWdlPgogICAgIDxUYXJnZXRQbGF0Zm9ybUlkZW50aWZpZXI+VUFQPC9UYXJnZXRQbGF0Zm9ybUlkZW50aWZpZXI+Ci0gICAgPFRhcmdldFBsYXRmb3JtVmVyc2lvbiBDb25kaXRpb249IiAnJChUYXJnZXRQbGF0Zm9ybVZlcnNpb24pJyA9PSAnJyAiPjEwLjAuMjIwMDAuMDwvVGFyZ2V0UGxhdGZvcm1WZXJzaW9uPgorICAgIDxUYXJnZXRQbGF0Zm9ybVZlcnNpb24gQ29uZGl0aW9uPSIgJyQoVGFyZ2V0UGxhdGZvcm1WZXJzaW9uKScgPT0gJycgIj4xMC4wLjI2MTAwLjA8L1RhcmdldFBsYXRmb3JtVmVyc2lvbj4KICAgICA8VGFyZ2V0UGxhdGZvcm1NaW5WZXJzaW9uPjEwLjAuMTgzNjIuMDwvVGFyZ2V0UGxhdGZvcm1NaW5WZXJzaW9uPgogICAgIDxNaW5pbXVtVmlzdWFsU3R1ZGlvVmVyc2lvbj4xNDwvTWluaW11bVZpc3VhbFN0dWRpb1ZlcnNpb24+CiAgICAgPExhbmdWZXJzaW9uPjEwPC9MYW5nVmVyc2lvbj4K"
+          [IO.File]::WriteAllBytes("$PWD/fix.patch", [Convert]::FromBase64String($b64))
+          git apply -p1 fix.patch
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+          git diff --stat
 
       - name: Configure pagefile
         uses: al-cheb/configure-pagefile-action@v1.2
