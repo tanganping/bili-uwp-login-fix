@@ -45,18 +45,27 @@ jobs:
           Write-Host "setup exit code: $code"
           if ($code -ne 0 -and $code -ne 3010) { exit 1 }
 
+      - name: Create signing certificate
+        shell: pwsh
+        run: |
+          $cert = New-SelfSignedCertificate -Type Custom -Subject "CN=云之幻" -KeyUsage DigitalSignature -FriendlyName "Bili UWP Sideload" -KeyExportPolicy Exportable -CertStoreLocation "Cert:\CurrentUser\My" -NotAfter (Get-Date).AddYears(3) -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.3")
+          $p = ConvertTo-SecureString -String "bili-fix-2026" -Force -AsPlainText
+          Export-PfxCertificate -Cert $cert -FilePath "${{ github.workspace }}\sign.pfx" -Password $p | Out-Null
+          "THUMB=$($cert.Thumbprint)" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          Write-Host "new cert thumb: $($cert.Thumbprint)"
+
       - name: Build (Release x64, sideload)
         shell: pwsh
         run: |
-          msbuild Bili.Uwp.sln /restore /p:Configuration=Release /p:Platform=x64 /p:AppxBundlePlatforms="x64" /p:AppxPackageDir=out\ /p:PackageCertificateKeyFile=App_TemporaryKey.pfx /p:BuildMode=SideloadOnly /p:UapAppxPackageBuildMode=SideloadOnly
+          msbuild Bili.Uwp.sln /restore /p:Configuration=Release /p:Platform=x64 /p:AppxBundlePlatforms="x64" /p:AppxPackageDir=out\ /p:PackageCertificateKeyFile=sign.pfx /p:PackageCertificatePassword=bili-fix-2026 /p:PackageCertificateThumbprint=$env:THUMB /p:BuildMode=SideloadOnly /p:UapAppxPackageBuildMode=SideloadOnly
           exit $LASTEXITCODE
 
       - name: Export signing cert
         shell: pwsh
         run: |
-          $cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2("src\App\App_TemporaryKey.pfx", "")
+          $cert = Get-ChildItem "Cert:\CurrentUser\My\$env:THUMB"
           $cert | Export-Certificate -FilePath "${{ github.workspace }}\BiliFix.cer" -Type CERT
-          Write-Host "Cert subject: $($cert.Subject)"
+          Write-Host "Cert subject: $($cert.Subject) notafter: $($cert.NotAfter)"
 
       - name: Upload package
         uses: actions/upload-artifact@v4
