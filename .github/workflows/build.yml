@@ -9,8 +9,11 @@ jobs:
     timeout-minutes: 120
     steps:
       - name: Fetch official source
-        shell: pwsh
-        run: git clone --depth 1 https://github.com/Richasy/Bili.Uwp.git src
+        uses: actions/checkout@v4
+        with:
+          repository: Richasy/Bili.Uwp
+          ref: main
+          path: src
 
       - name: Apply login fix (5 patches)
         shell: python
