@@ -1,0 +1,79 @@
+name: Build Bili.Uwp (login fix)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 120
+    steps:
+      - name: Fetch official source
+        shell: pwsh
+        run: git clone --depth 1 https://github.com/Richasy/Bili.Uwp.git src
+
+      - name: Apply login fix (5 patches)
+        shell: python
+        run: |
+          import pathlib
+          fixes = [
+            ("src/Models/Models.App/Constants/ServiceConstants.cs",
+             'Edg/92.0.902.62";',
+             'Edg/92.0.902.62";\r\n\r\n        /// <summary>\r\n        /// iOS-style UA. Bilibili risk control rejects requests without User-Agent (HTTP 412), which broke login.\r\n        /// </summary>\r\n        public const string IOSUserAgentString = "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1 bili-universal/73803300";'),
+            ("src/Lib/Lib.Implementation/HttpProvider/HttpProvider.Extension.cs",
+             'await Task.Run(async () =>',
+             'if (!request.Headers.UserAgent.Any())\r\n                {\r\n                    request.Headers.UserAgent.ParseAdd(ServiceConstants.IOSUserAgentString);\r\n                }\r\n\r\n                await Task.Run(async () =>'),
+            ("src/Lib/SignIn.Uwp/SignInDialog.xaml.cs",
+             'case -105:',
+             'case -105:\r\n                        case -3:'),
+            ("src/App/Resources/Strings/zh-Hans/Resources.resw",
+             '<value>登录失败，请稍后重试</value>',
+             '<value>登录失败，请使用扫码登录后重试</value>'),
+            ("Uwp.props",
+             '>10.0.22000.0<',
+             '>10.0.26100.0<'),
+          ]
+          for path, old, new in fixes:
+              p = pathlib.Path(path)
+              t = p.read_text(encoding="utf-8-sig")
+              assert t.count(old) == 1, "pattern not unique/found in %s (count=%d)" % (path, t.count(old))
+              p.write_text(t.replace(old, new, 1), encoding="utf-8-sig")
+          print("all 5 fixes applied")
+
+      - name: Add UWP component group to VS
+        shell: pwsh
+        run: |
+          $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+          $vsPath = & $vswhere -latest -property installationPath
+          $setup = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\setup.exe"
+          Write-Host "VS at: $vsPath"
+          $p = Start-Process -FilePath $setup -ArgumentList @('modify','--installPath',"$vsPath",'--add','Microsoft.VisualStudio.ComponentGroup.UWP.Support','--quiet','--norestart','--nocache') -Wait -PassThru
+          Write-Host "setup exit code: $($p.ExitCode)"
+          if ($p.ExitCode -ne 0 -and $p.ExitCode -ne 3010) { exit 1 }
+
+      - name: Build (Release x64, sideload)
+        shell: pwsh
+        run: |
+          $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+          $msbuild = & $vswhere -latest -requires Microsoft.Component.MSBuild -find "MSBuild\**\Bin\MSBuild.exe" | Select-Object -First 1
+          Write-Host "MSBuild: $msbuild"
+          $out = "${{ github.workspace }}\out\"
+          & $msbuild src\App\App.csproj /restore /t:Build /p:Configuration=Release /p:Platform=x64 /p:UapAppxPackageBuildMode=SideloadOnly /p:AppxPackageSigningEnabled=true /p:AppxPackageDir=$out
+          exit $LASTEXITCODE
+
+      - name: Export signing cert
+        shell: pwsh
+        run: |
+          $cert = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2("src\App\App_TemporaryKey.pfx", "")
+          $cert | Export-Certificate -FilePath "${{ github.workspace }}\BiliFix.cer" -Type CERT
+          Write-Host "Cert subject: $($cert.Subject)"
+
+      - name: Upload package
+        uses: actions/upload-artifact@v4
+        with:
+          name: Bili-UWP-login-fixed
+          path: |
+            out/**/*.msixbundle
+            out/**/*.msix
+            BiliFix.cer
+          if-no-files-found: error
