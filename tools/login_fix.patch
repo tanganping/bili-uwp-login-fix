@@ -1,5 +1,5 @@
 diff -ruN a/src/App/Resources/Strings/zh-Hans/Resources.resw b/src/App/Resources/Strings/zh-Hans/Resources.resw
---- a/src/App/Resources/Strings/zh-Hans/Resources.resw	2026-09-06 03:21:34.795560000 +0000
+--- a/src/App/Resources/Strings/zh-Hans/Resources.resw	2026-09-06 03:39:57.154560000 +0000
 +++ b/src/App/Resources/Strings/zh-Hans/Resources.resw	2026-09-05 08:28:03.000000000 +0000
 @@ -835,7 +835,7 @@
      <value>登录</value>
@@ -11,7 +11,7 @@ diff -ruN a/src/App/Resources/Strings/zh-Hans/Resources.resw b/src/App/Resources
    <data name="Manual" xml:space="preserve">
      <value>手动</value>
 diff -ruN a/src/Lib/DI.App/DI.App.csproj b/src/Lib/DI.App/DI.App.csproj
---- a/src/Lib/DI.App/DI.App.csproj	2026-09-06 03:21:34.795560000 +0000
+--- a/src/Lib/DI.App/DI.App.csproj	2026-09-06 03:39:57.155560000 +0000
 +++ b/src/Lib/DI.App/DI.App.csproj	2026-09-06 01:22:28.000000000 +0000
 @@ -1,200 +1,200 @@
 -﻿<?xml version="1.0" encoding="utf-8"?>
@@ -415,7 +415,7 @@ diff -ruN a/src/Lib/DI.App/DI.App.csproj b/src/Lib/DI.App/DI.App.csproj
  </Project>
 \ 文件末尾没有换行符
 diff -ruN a/src/Lib/DI.Task/DI.Task.csproj b/src/Lib/DI.Task/DI.Task.csproj
---- a/src/Lib/DI.Task/DI.Task.csproj	2026-09-06 03:21:34.796560000 +0000
+--- a/src/Lib/DI.Task/DI.Task.csproj	2026-09-06 03:39:57.156560000 +0000
 +++ b/src/Lib/DI.Task/DI.Task.csproj	2026-09-06 01:22:28.000000000 +0000
 @@ -1,181 +1,181 @@
 -﻿<?xml version="1.0" encoding="utf-8"?>
@@ -781,8 +781,8 @@ diff -ruN a/src/Lib/DI.Task/DI.Task.csproj b/src/Lib/DI.Task/DI.Task.csproj
  </Project>
 \ 文件末尾没有换行符
 diff -ruN a/src/Lib/Lib.Implementation/AccountProvider/AccountProvider.cs b/src/Lib/Lib.Implementation/AccountProvider/AccountProvider.cs
---- a/src/Lib/Lib.Implementation/AccountProvider/AccountProvider.cs	2026-09-06 03:21:34.797560000 +0000
-+++ b/src/Lib/Lib.Implementation/AccountProvider/AccountProvider.cs	2026-09-06 02:29:59.000000000 +0000
+--- a/src/Lib/Lib.Implementation/AccountProvider/AccountProvider.cs	2026-09-06 03:39:57.157560000 +0000
++++ b/src/Lib/Lib.Implementation/AccountProvider/AccountProvider.cs	2026-09-06 03:35:49.000000000 +0000
 @@ -1,393 +1,393 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -1571,8 +1571,8 @@ diff -ruN a/src/Lib/Lib.Implementation/AccountProvider/AccountProvider.cs b/src/
 +    }
 +}
 diff -ruN a/src/Lib/Lib.Implementation/HttpProvider/HttpProvider.Extension.cs b/src/Lib/Lib.Implementation/HttpProvider/HttpProvider.Extension.cs
---- a/src/Lib/Lib.Implementation/HttpProvider/HttpProvider.Extension.cs	2026-09-06 03:21:34.798560000 +0000
-+++ b/src/Lib/Lib.Implementation/HttpProvider/HttpProvider.Extension.cs	2026-09-06 02:30:02.000000000 +0000
+--- a/src/Lib/Lib.Implementation/HttpProvider/HttpProvider.Extension.cs	2026-09-06 03:39:57.157560000 +0000
++++ b/src/Lib/Lib.Implementation/HttpProvider/HttpProvider.Extension.cs	2026-09-06 03:35:53.000000000 +0000
 @@ -1,211 +1,217 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -2003,8 +2003,8 @@ diff -ruN a/src/Lib/Lib.Implementation/HttpProvider/HttpProvider.Extension.cs b/
 +    }
 +}
 diff -ruN a/src/Lib/Lib.Interfaces/IAccountProvider.cs b/src/Lib/Lib.Interfaces/IAccountProvider.cs
---- a/src/Lib/Lib.Interfaces/IAccountProvider.cs	2026-09-06 03:21:34.799560000 +0000
-+++ b/src/Lib/Lib.Interfaces/IAccountProvider.cs	2026-09-06 02:30:05.000000000 +0000
+--- a/src/Lib/Lib.Interfaces/IAccountProvider.cs	2026-09-06 03:39:57.158560000 +0000
++++ b/src/Lib/Lib.Interfaces/IAccountProvider.cs	2026-09-06 03:35:57.000000000 +0000
 @@ -1,198 +1,198 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -2403,8 +2403,8 @@ diff -ruN a/src/Lib/Lib.Interfaces/IAccountProvider.cs b/src/Lib/Lib.Interfaces/
 +    }
 +}
 diff -ruN a/src/Lib/SignIn.Uwp/AuthorizeProvider/AuthorizeProvider.Extension.cs b/src/Lib/SignIn.Uwp/AuthorizeProvider/AuthorizeProvider.Extension.cs
---- a/src/Lib/SignIn.Uwp/AuthorizeProvider/AuthorizeProvider.Extension.cs	2026-09-06 03:21:34.800560000 +0000
-+++ b/src/Lib/SignIn.Uwp/AuthorizeProvider/AuthorizeProvider.Extension.cs	2026-09-06 02:30:10.000000000 +0000
+--- a/src/Lib/SignIn.Uwp/AuthorizeProvider/AuthorizeProvider.Extension.cs	2026-09-06 03:39:57.159560000 +0000
++++ b/src/Lib/SignIn.Uwp/AuthorizeProvider/AuthorizeProvider.Extension.cs	2026-09-06 03:36:03.000000000 +0000
 @@ -1,530 +1,540 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -3477,8 +3477,8 @@ diff -ruN a/src/Lib/SignIn.Uwp/AuthorizeProvider/AuthorizeProvider.Extension.cs 
 +    }
 +}
 diff -ruN a/src/Lib/SignIn.Uwp/SignInDialog.xaml.cs b/src/Lib/SignIn.Uwp/SignInDialog.xaml.cs
---- a/src/Lib/SignIn.Uwp/SignInDialog.xaml.cs	2026-09-06 03:21:34.800560000 +0000
-+++ b/src/Lib/SignIn.Uwp/SignInDialog.xaml.cs	2026-09-06 02:30:10.000000000 +0000
+--- a/src/Lib/SignIn.Uwp/SignInDialog.xaml.cs	2026-09-06 03:39:57.160560000 +0000
++++ b/src/Lib/SignIn.Uwp/SignInDialog.xaml.cs	2026-09-06 03:36:03.000000000 +0000
 @@ -1,326 +1,329 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -4136,7 +4136,7 @@ diff -ruN a/src/Lib/SignIn.Uwp/SignInDialog.xaml.cs b/src/Lib/SignIn.Uwp/SignInD
 +    }
 +}
 diff -ruN a/src/Lib/SignIn.Uwp/SignIn.Uwp.csproj b/src/Lib/SignIn.Uwp/SignIn.Uwp.csproj
---- a/src/Lib/SignIn.Uwp/SignIn.Uwp.csproj	2026-09-06 03:21:34.800560000 +0000
+--- a/src/Lib/SignIn.Uwp/SignIn.Uwp.csproj	2026-09-06 03:39:57.159560000 +0000
 +++ b/src/Lib/SignIn.Uwp/SignIn.Uwp.csproj	2026-09-06 01:22:29.000000000 +0000
 @@ -1,186 +1,186 @@
 -﻿<?xml version="1.0" encoding="utf-8"?>
@@ -4512,8 +4512,8 @@ diff -ruN a/src/Lib/SignIn.Uwp/SignIn.Uwp.csproj b/src/Lib/SignIn.Uwp/SignIn.Uwp
  </Project>
 \ 文件末尾没有换行符
 diff -ruN a/src/Models/Models.App/Args/AppBackEventArgs.cs b/src/Models/Models.App/Args/AppBackEventArgs.cs
---- a/src/Models/Models.App/Args/AppBackEventArgs.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Args/AppBackEventArgs.cs	2026-09-06 02:28:39.000000000 +0000
+--- a/src/Models/Models.App/Args/AppBackEventArgs.cs	2026-09-06 03:39:57.160560000 +0000
++++ b/src/Models/Models.App/Args/AppBackEventArgs.cs	2026-09-06 03:36:06.000000000 +0000
 @@ -1,52 +1,52 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -4620,8 +4620,8 @@ diff -ruN a/src/Models/Models.App/Args/AppBackEventArgs.cs b/src/Models/Models.A
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Args/AppNavigationEventArgs.cs b/src/Models/Models.App/Args/AppNavigationEventArgs.cs
---- a/src/Models/Models.App/Args/AppNavigationEventArgs.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Args/AppNavigationEventArgs.cs	2026-09-06 02:28:40.000000000 +0000
+--- a/src/Models/Models.App/Args/AppNavigationEventArgs.cs	2026-09-06 03:39:57.160560000 +0000
++++ b/src/Models/Models.App/Args/AppNavigationEventArgs.cs	2026-09-06 03:36:07.000000000 +0000
 @@ -1,53 +1,53 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -4730,8 +4730,8 @@ diff -ruN a/src/Models/Models.App/Args/AppNavigationEventArgs.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Args/AppTipNotificationEventArgs.cs b/src/Models/Models.App/Args/AppTipNotificationEventArgs.cs
---- a/src/Models/Models.App/Args/AppTipNotificationEventArgs.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Args/AppTipNotificationEventArgs.cs	2026-09-06 02:28:40.000000000 +0000
+--- a/src/Models/Models.App/Args/AppTipNotificationEventArgs.cs	2026-09-06 03:39:57.160560000 +0000
++++ b/src/Models/Models.App/Args/AppTipNotificationEventArgs.cs	2026-09-06 03:36:07.000000000 +0000
 @@ -1,34 +1,34 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -4802,8 +4802,8 @@ diff -ruN a/src/Models/Models.App/Args/AppTipNotificationEventArgs.cs b/src/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Args/AuthorizeStateChangedEventArgs.cs b/src/Models/Models.App/Args/AuthorizeStateChangedEventArgs.cs
---- a/src/Models/Models.App/Args/AuthorizeStateChangedEventArgs.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Args/AuthorizeStateChangedEventArgs.cs	2026-09-06 02:28:40.000000000 +0000
+--- a/src/Models/Models.App/Args/AuthorizeStateChangedEventArgs.cs	2026-09-06 03:39:57.160560000 +0000
++++ b/src/Models/Models.App/Args/AuthorizeStateChangedEventArgs.cs	2026-09-06 03:36:07.000000000 +0000
 @@ -1,34 +1,34 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -4874,8 +4874,8 @@ diff -ruN a/src/Models/Models.App/Args/AuthorizeStateChangedEventArgs.cs b/src/M
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Args/LiveMessageEventArgs.cs b/src/Models/Models.App/Args/LiveMessageEventArgs.cs
---- a/src/Models/Models.App/Args/LiveMessageEventArgs.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Args/LiveMessageEventArgs.cs	2026-09-06 02:28:41.000000000 +0000
+--- a/src/Models/Models.App/Args/LiveMessageEventArgs.cs	2026-09-06 03:39:57.160560000 +0000
++++ b/src/Models/Models.App/Args/LiveMessageEventArgs.cs	2026-09-06 03:36:08.000000000 +0000
 @@ -1,34 +1,34 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -4946,8 +4946,8 @@ diff -ruN a/src/Models/Models.App/Args/LiveMessageEventArgs.cs b/src/Models/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Args/MediaPositionChangedEventArgs.cs b/src/Models/Models.App/Args/MediaPositionChangedEventArgs.cs
---- a/src/Models/Models.App/Args/MediaPositionChangedEventArgs.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Args/MediaPositionChangedEventArgs.cs	2026-09-06 02:28:41.000000000 +0000
+--- a/src/Models/Models.App/Args/MediaPositionChangedEventArgs.cs	2026-09-06 03:39:57.160560000 +0000
++++ b/src/Models/Models.App/Args/MediaPositionChangedEventArgs.cs	2026-09-06 03:36:08.000000000 +0000
 @@ -1,31 +1,31 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -5012,8 +5012,8 @@ diff -ruN a/src/Models/Models.App/Args/MediaPositionChangedEventArgs.cs b/src/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Args/MediaStateChangedEventArgs.cs b/src/Models/Models.App/Args/MediaStateChangedEventArgs.cs
---- a/src/Models/Models.App/Args/MediaStateChangedEventArgs.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Args/MediaStateChangedEventArgs.cs	2026-09-06 02:28:41.000000000 +0000
+--- a/src/Models/Models.App/Args/MediaStateChangedEventArgs.cs	2026-09-06 03:39:57.160560000 +0000
++++ b/src/Models/Models.App/Args/MediaStateChangedEventArgs.cs	2026-09-06 03:36:08.000000000 +0000
 @@ -1,32 +1,32 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -5080,8 +5080,8 @@ diff -ruN a/src/Models/Models.App/Args/MediaStateChangedEventArgs.cs b/src/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Args/ShowCommentEventArgs.cs b/src/Models/Models.App/Args/ShowCommentEventArgs.cs
---- a/src/Models/Models.App/Args/ShowCommentEventArgs.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Args/ShowCommentEventArgs.cs	2026-09-06 02:28:42.000000000 +0000
+--- a/src/Models/Models.App/Args/ShowCommentEventArgs.cs	2026-09-06 03:39:57.160560000 +0000
++++ b/src/Models/Models.App/Args/ShowCommentEventArgs.cs	2026-09-06 03:36:09.000000000 +0000
 @@ -1,41 +1,41 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -5166,8 +5166,8 @@ diff -ruN a/src/Models/Models.App/Args/ShowCommentEventArgs.cs b/src/Models/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Args/ShowImageEventArgs.cs b/src/Models/Models.App/Args/ShowImageEventArgs.cs
---- a/src/Models/Models.App/Args/ShowImageEventArgs.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Args/ShowImageEventArgs.cs	2026-09-06 03:16:26.000000000 +0000
+--- a/src/Models/Models.App/Args/ShowImageEventArgs.cs	2026-09-06 03:39:57.160560000 +0000
++++ b/src/Models/Models.App/Args/ShowImageEventArgs.cs	2026-09-06 03:36:09.000000000 +0000
 @@ -1,35 +1,35 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -5240,8 +5240,8 @@ diff -ruN a/src/Models/Models.App/Args/ShowImageEventArgs.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Args/UpdateEventArgs.cs b/src/Models/Models.App/Args/UpdateEventArgs.cs
---- a/src/Models/Models.App/Args/UpdateEventArgs.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Args/UpdateEventArgs.cs	2026-09-06 02:28:42.000000000 +0000
+--- a/src/Models/Models.App/Args/UpdateEventArgs.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Args/UpdateEventArgs.cs	2026-09-06 03:36:09.000000000 +0000
 @@ -1,58 +1,58 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -5360,8 +5360,8 @@ diff -ruN a/src/Models/Models.App/Args/UpdateEventArgs.cs b/src/Models/Models.Ap
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Constants/ApiConstants.cs b/src/Models/Models.App/Constants/ApiConstants.cs
---- a/src/Models/Models.App/Constants/ApiConstants.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Constants/ApiConstants.cs	2026-09-06 02:28:43.000000000 +0000
+--- a/src/Models/Models.App/Constants/ApiConstants.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Constants/ApiConstants.cs	2026-09-06 03:36:10.000000000 +0000
 @@ -1,632 +1,632 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -6628,8 +6628,8 @@ diff -ruN a/src/Models/Models.App/Constants/ApiConstants.cs b/src/Models/Models.
 +#pragma warning restore SA1600 // Elements should be documented
 +}
 diff -ruN a/src/Models/Models.App/Constants/AppConstants.cs b/src/Models/Models.App/Constants/AppConstants.cs
---- a/src/Models/Models.App/Constants/AppConstants.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Constants/AppConstants.cs	2026-09-06 02:28:43.000000000 +0000
+--- a/src/Models/Models.App/Constants/AppConstants.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Constants/AppConstants.cs	2026-09-06 03:36:10.000000000 +0000
 @@ -1,88 +1,88 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -6808,8 +6808,8 @@ diff -ruN a/src/Models/Models.App/Constants/AppConstants.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Constants/ControllerConstants.cs b/src/Models/Models.App/Constants/ControllerConstants.cs
---- a/src/Models/Models.App/Constants/ControllerConstants.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Constants/ControllerConstants.cs	2026-09-06 02:28:43.000000000 +0000
+--- a/src/Models/Models.App/Constants/ControllerConstants.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Constants/ControllerConstants.cs	2026-09-06 03:36:11.000000000 +0000
 @@ -1,45 +1,45 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -6902,8 +6902,8 @@ diff -ruN a/src/Models/Models.App/Constants/ControllerConstants.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Constants/ServiceConstants.cs b/src/Models/Models.App/Constants/ServiceConstants.cs
---- a/src/Models/Models.App/Constants/ServiceConstants.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Constants/ServiceConstants.cs	2026-09-06 02:28:44.000000000 +0000
+--- a/src/Models/Models.App/Constants/ServiceConstants.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Constants/ServiceConstants.cs	2026-09-06 03:36:11.000000000 +0000
 @@ -1,266 +1,271 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -7443,7 +7443,7 @@ diff -ruN a/src/Models/Models.App/Constants/ServiceConstants.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Models.App.csproj b/src/Models/Models.App/Models.App.csproj
---- a/src/Models/Models.App/Models.App.csproj	2026-09-06 03:21:34.801560000 +0000
+--- a/src/Models/Models.App/Models.App.csproj	2026-09-06 03:39:57.161560000 +0000
 +++ b/src/Models/Models.App/Models.App.csproj	2026-09-06 01:22:30.000000000 +0000
 @@ -1,19 +1,19 @@
 -<Project Sdk="Microsoft.NET.Sdk">
@@ -7485,8 +7485,8 @@ diff -ruN a/src/Models/Models.App/Models.App.csproj b/src/Models/Models.App/Mode
 +
 +</Project>
 diff -ruN a/src/Models/Models.App/Other/BiliPlusBangumi.cs b/src/Models/Models.App/Other/BiliPlusBangumi.cs
---- a/src/Models/Models.App/Other/BiliPlusBangumi.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Other/BiliPlusBangumi.cs	2026-09-06 03:16:26.000000000 +0000
+--- a/src/Models/Models.App/Other/BiliPlusBangumi.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Other/BiliPlusBangumi.cs	2026-09-06 03:36:11.000000000 +0000
 @@ -1,49 +1,49 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -7587,8 +7587,8 @@ diff -ruN a/src/Models/Models.App/Other/BiliPlusBangumi.cs b/src/Models/Models.A
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Other/CommentSortHeader.cs b/src/Models/Models.App/Other/CommentSortHeader.cs
---- a/src/Models/Models.App/Other/CommentSortHeader.cs	2026-09-06 03:21:34.801560000 +0000
-+++ b/src/Models/Models.App/Other/CommentSortHeader.cs	2026-09-06 02:28:44.000000000 +0000
+--- a/src/Models/Models.App/Other/CommentSortHeader.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Other/CommentSortHeader.cs	2026-09-06 03:36:12.000000000 +0000
 @@ -1,42 +1,42 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -7675,8 +7675,8 @@ diff -ruN a/src/Models/Models.App/Other/CommentSortHeader.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Other/CurrentPlayingRecord.cs b/src/Models/Models.App/Other/CurrentPlayingRecord.cs
---- a/src/Models/Models.App/Other/CurrentPlayingRecord.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.App/Other/CurrentPlayingRecord.cs	2026-09-06 03:16:27.000000000 +0000
+--- a/src/Models/Models.App/Other/CurrentPlayingRecord.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Other/CurrentPlayingRecord.cs	2026-09-06 03:36:12.000000000 +0000
 @@ -1,67 +1,67 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -7813,8 +7813,8 @@ diff -ruN a/src/Models/Models.App/Other/CurrentPlayingRecord.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Other/DynamicHeader.cs b/src/Models/Models.App/Other/DynamicHeader.cs
---- a/src/Models/Models.App/Other/DynamicHeader.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.App/Other/DynamicHeader.cs	2026-09-06 02:28:45.000000000 +0000
+--- a/src/Models/Models.App/Other/DynamicHeader.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Other/DynamicHeader.cs	2026-09-06 03:36:12.000000000 +0000
 @@ -1,39 +1,39 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -7895,8 +7895,8 @@ diff -ruN a/src/Models/Models.App/Other/DynamicHeader.cs b/src/Models/Models.App
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Other/FavoriteHeader.cs b/src/Models/Models.App/Other/FavoriteHeader.cs
---- a/src/Models/Models.App/Other/FavoriteHeader.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.App/Other/FavoriteHeader.cs	2026-09-06 02:28:45.000000000 +0000
+--- a/src/Models/Models.App/Other/FavoriteHeader.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Other/FavoriteHeader.cs	2026-09-06 03:36:13.000000000 +0000
 @@ -1,39 +1,39 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -7977,8 +7977,8 @@ diff -ruN a/src/Models/Models.App/Other/FavoriteHeader.cs b/src/Models/Models.Ap
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Other/GithubReleaseResponse.cs b/src/Models/Models.App/Other/GithubReleaseResponse.cs
---- a/src/Models/Models.App/Other/GithubReleaseResponse.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.App/Other/GithubReleaseResponse.cs	2026-09-06 02:28:45.000000000 +0000
+--- a/src/Models/Models.App/Other/GithubReleaseResponse.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Other/GithubReleaseResponse.cs	2026-09-06 03:36:13.000000000 +0000
 @@ -1,49 +1,49 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -8079,8 +8079,8 @@ diff -ruN a/src/Models/Models.App/Other/GithubReleaseResponse.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Other/PlayerSectionHeader.cs b/src/Models/Models.App/Other/PlayerSectionHeader.cs
---- a/src/Models/Models.App/Other/PlayerSectionHeader.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.App/Other/PlayerSectionHeader.cs	2026-09-06 02:28:46.000000000 +0000
+--- a/src/Models/Models.App/Other/PlayerSectionHeader.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Other/PlayerSectionHeader.cs	2026-09-06 03:36:14.000000000 +0000
 @@ -1,39 +1,39 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -8161,8 +8161,8 @@ diff -ruN a/src/Models/Models.App/Other/PlayerSectionHeader.cs b/src/Models/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Other/QuestionModule.cs b/src/Models/Models.App/Other/QuestionModule.cs
---- a/src/Models/Models.App/Other/QuestionModule.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.App/Other/QuestionModule.cs	2026-09-06 03:16:28.000000000 +0000
+--- a/src/Models/Models.App/Other/QuestionModule.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Other/QuestionModule.cs	2026-09-06 03:36:14.000000000 +0000
 @@ -1,69 +1,69 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -8303,8 +8303,8 @@ diff -ruN a/src/Models/Models.App/Other/QuestionModule.cs b/src/Models/Models.Ap
 +    }
 +}
 diff -ruN a/src/Models/Models.App/Other/ServiceException.cs b/src/Models/Models.App/Other/ServiceException.cs
---- a/src/Models/Models.App/Other/ServiceException.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.App/Other/ServiceException.cs	2026-09-06 02:28:46.000000000 +0000
+--- a/src/Models/Models.App/Other/ServiceException.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.App/Other/ServiceException.cs	2026-09-06 03:36:14.000000000 +0000
 @@ -1,121 +1,121 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -8549,8 +8549,8 @@ diff -ruN a/src/Models/Models.App/Other/ServiceException.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Article/ArticleCategory.cs b/src/Models/Models.BiliBili/Article/ArticleCategory.cs
---- a/src/Models/Models.BiliBili/Article/ArticleCategory.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Article/ArticleCategory.cs	2026-09-06 03:16:29.000000000 +0000
+--- a/src/Models/Models.BiliBili/Article/ArticleCategory.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.BiliBili/Article/ArticleCategory.cs	2026-09-06 03:36:15.000000000 +0000
 @@ -1,38 +1,38 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -8629,8 +8629,8 @@ diff -ruN a/src/Models/Models.BiliBili/Article/ArticleCategory.cs b/src/Models/M
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Article/Article.cs b/src/Models/Models.BiliBili/Article/Article.cs
---- a/src/Models/Models.BiliBili/Article/Article.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Article/Article.cs	2026-09-06 03:16:28.000000000 +0000
+--- a/src/Models/Models.BiliBili/Article/Article.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.BiliBili/Article/Article.cs	2026-09-06 03:36:15.000000000 +0000
 @@ -1,92 +1,92 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -8817,8 +8817,8 @@ diff -ruN a/src/Models/Models.BiliBili/Article/Article.cs b/src/Models/Models.Bi
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Article/ArticleRecommendResponse.cs b/src/Models/Models.BiliBili/Article/ArticleRecommendResponse.cs
---- a/src/Models/Models.BiliBili/Article/ArticleRecommendResponse.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Article/ArticleRecommendResponse.cs	2026-09-06 02:28:47.000000000 +0000
+--- a/src/Models/Models.BiliBili/Article/ArticleRecommendResponse.cs	2026-09-06 03:39:57.161560000 +0000
++++ b/src/Models/Models.BiliBili/Article/ArticleRecommendResponse.cs	2026-09-06 03:36:15.000000000 +0000
 @@ -1,32 +1,32 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -8885,8 +8885,8 @@ diff -ruN a/src/Models/Models.BiliBili/Article/ArticleRecommendResponse.cs b/src
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Article/ArticleStats.cs b/src/Models/Models.BiliBili/Article/ArticleStats.cs
---- a/src/Models/Models.BiliBili/Article/ArticleStats.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Article/ArticleStats.cs	2026-09-06 03:16:29.000000000 +0000
+--- a/src/Models/Models.BiliBili/Article/ArticleStats.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Article/ArticleStats.cs	2026-09-06 03:36:16.000000000 +0000
 @@ -1,61 +1,61 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -9011,8 +9011,8 @@ diff -ruN a/src/Models/Models.BiliBili/Article/ArticleStats.cs b/src/Models/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Authorize/AuthorizeResult.cs b/src/Models/Models.BiliBili/Authorize/AuthorizeResult.cs
---- a/src/Models/Models.BiliBili/Authorize/AuthorizeResult.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Authorize/AuthorizeResult.cs	2026-09-06 03:16:30.000000000 +0000
+--- a/src/Models/Models.BiliBili/Authorize/AuthorizeResult.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Authorize/AuthorizeResult.cs	2026-09-06 03:36:16.000000000 +0000
 @@ -1,50 +1,50 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -9115,8 +9115,8 @@ diff -ruN a/src/Models/Models.BiliBili/Authorize/AuthorizeResult.cs b/src/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Authorize/Cookies.cs b/src/Models/Models.BiliBili/Authorize/Cookies.cs
---- a/src/Models/Models.BiliBili/Authorize/Cookies.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Authorize/Cookies.cs	2026-09-06 03:16:30.000000000 +0000
+--- a/src/Models/Models.BiliBili/Authorize/Cookies.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Authorize/Cookies.cs	2026-09-06 03:36:17.000000000 +0000
 @@ -1,63 +1,63 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -9245,8 +9245,8 @@ diff -ruN a/src/Models/Models.BiliBili/Authorize/Cookies.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Authorize/LoginAppThird.cs b/src/Models/Models.BiliBili/Authorize/LoginAppThird.cs
---- a/src/Models/Models.BiliBili/Authorize/LoginAppThird.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Authorize/LoginAppThird.cs	2026-09-06 03:16:31.000000000 +0000
+--- a/src/Models/Models.BiliBili/Authorize/LoginAppThird.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Authorize/LoginAppThird.cs	2026-09-06 03:36:17.000000000 +0000
 @@ -1,36 +1,36 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -9321,8 +9321,8 @@ diff -ruN a/src/Models/Models.BiliBili/Authorize/LoginAppThird.cs b/src/Models/M
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Authorize/QRInfo.cs b/src/Models/Models.BiliBili/Authorize/QRInfo.cs
---- a/src/Models/Models.BiliBili/Authorize/QRInfo.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Authorize/QRInfo.cs	2026-09-06 02:28:49.000000000 +0000
+--- a/src/Models/Models.BiliBili/Authorize/QRInfo.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Authorize/QRInfo.cs	2026-09-06 03:36:17.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -9375,8 +9375,8 @@ diff -ruN a/src/Models/Models.BiliBili/Authorize/QRInfo.cs b/src/Models/Models.B
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Authorize/TokenInfo.cs b/src/Models/Models.BiliBili/Authorize/TokenInfo.cs
---- a/src/Models/Models.BiliBili/Authorize/TokenInfo.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Authorize/TokenInfo.cs	2026-09-06 03:16:31.000000000 +0000
+--- a/src/Models/Models.BiliBili/Authorize/TokenInfo.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Authorize/TokenInfo.cs	2026-09-06 03:36:18.000000000 +0000
 @@ -1,43 +1,43 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -9465,8 +9465,8 @@ diff -ruN a/src/Models/Models.BiliBili/Authorize/TokenInfo.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Core/OnlineViewerCount.cs b/src/Models/Models.BiliBili/Core/OnlineViewerCount.cs
---- a/src/Models/Models.BiliBili/Core/OnlineViewerCount.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Core/OnlineViewerCount.cs	2026-09-06 02:28:50.000000000 +0000
+--- a/src/Models/Models.BiliBili/Core/OnlineViewerCount.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Core/OnlineViewerCount.cs	2026-09-06 03:36:18.000000000 +0000
 @@ -1,32 +1,32 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -9533,8 +9533,8 @@ diff -ruN a/src/Models/Models.BiliBili/Core/OnlineViewerCount.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Core/PublisherInfo.cs b/src/Models/Models.BiliBili/Core/PublisherInfo.cs
---- a/src/Models/Models.BiliBili/Core/PublisherInfo.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Core/PublisherInfo.cs	2026-09-06 02:28:50.000000000 +0000
+--- a/src/Models/Models.BiliBili/Core/PublisherInfo.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Core/PublisherInfo.cs	2026-09-06 03:36:19.000000000 +0000
 @@ -1,30 +1,30 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -9597,8 +9597,8 @@ diff -ruN a/src/Models/Models.BiliBili/Core/PublisherInfo.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Core/RecommendCard.cs b/src/Models/Models.BiliBili/Core/RecommendCard.cs
---- a/src/Models/Models.BiliBili/Core/RecommendCard.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Core/RecommendCard.cs	2026-09-06 03:16:32.000000000 +0000
+--- a/src/Models/Models.BiliBili/Core/RecommendCard.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Core/RecommendCard.cs	2026-09-06 03:36:19.000000000 +0000
 @@ -1,296 +1,296 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -10193,8 +10193,8 @@ diff -ruN a/src/Models/Models.BiliBili/Core/RecommendCard.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Core/Tag.cs b/src/Models/Models.BiliBili/Core/Tag.cs
---- a/src/Models/Models.BiliBili/Core/Tag.cs	2026-09-06 03:21:34.802560000 +0000
-+++ b/src/Models/Models.BiliBili/Core/Tag.cs	2026-09-06 03:16:32.000000000 +0000
+--- a/src/Models/Models.BiliBili/Core/Tag.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Core/Tag.cs	2026-09-06 03:36:20.000000000 +0000
 @@ -1,49 +1,49 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -10295,8 +10295,8 @@ diff -ruN a/src/Models/Models.BiliBili/Core/Tag.cs b/src/Models/Models.BiliBili/
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Core/Video/PartitionVideo.cs b/src/Models/Models.BiliBili/Core/Video/PartitionVideo.cs
---- a/src/Models/Models.BiliBili/Core/Video/PartitionVideo.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Core/Video/PartitionVideo.cs	2026-09-06 03:16:33.000000000 +0000
+--- a/src/Models/Models.BiliBili/Core/Video/PartitionVideo.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Core/Video/PartitionVideo.cs	2026-09-06 03:36:20.000000000 +0000
 @@ -1,91 +1,91 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -10481,8 +10481,8 @@ diff -ruN a/src/Models/Models.BiliBili/Core/Video/PartitionVideo.cs b/src/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Core/Video/VideoBase.cs b/src/Models/Models.BiliBili/Core/Video/VideoBase.cs
---- a/src/Models/Models.BiliBili/Core/Video/VideoBase.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Core/Video/VideoBase.cs	2026-09-06 03:16:33.000000000 +0000
+--- a/src/Models/Models.BiliBili/Core/Video/VideoBase.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Core/Video/VideoBase.cs	2026-09-06 03:36:21.000000000 +0000
 @@ -1,31 +1,31 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -10547,8 +10547,8 @@ diff -ruN a/src/Models/Models.BiliBili/Core/Video/VideoBase.cs b/src/Models/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Core/Video/ViewLaterVideo.cs b/src/Models/Models.BiliBili/Core/Video/ViewLaterVideo.cs
---- a/src/Models/Models.BiliBili/Core/Video/ViewLaterVideo.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Core/Video/ViewLaterVideo.cs	2026-09-06 03:16:34.000000000 +0000
+--- a/src/Models/Models.BiliBili/Core/Video/ViewLaterVideo.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Core/Video/ViewLaterVideo.cs	2026-09-06 03:36:21.000000000 +0000
 @@ -1,121 +1,121 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -10793,8 +10793,8 @@ diff -ruN a/src/Models/Models.BiliBili/Core/Video/ViewLaterVideo.cs b/src/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Core/VideoStatusInfo.cs b/src/Models/Models.BiliBili/Core/VideoStatusInfo.cs
---- a/src/Models/Models.BiliBili/Core/VideoStatusInfo.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Core/VideoStatusInfo.cs	2026-09-06 03:16:32.000000000 +0000
+--- a/src/Models/Models.BiliBili/Core/VideoStatusInfo.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Core/VideoStatusInfo.cs	2026-09-06 03:36:20.000000000 +0000
 @@ -1,78 +1,78 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -10953,8 +10953,8 @@ diff -ruN a/src/Models/Models.BiliBili/Core/VideoStatusInfo.cs b/src/Models/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveAppPlayInformation.cs b/src/Models/Models.BiliBili/Live/LiveAppPlayInformation.cs
---- a/src/Models/Models.BiliBili/Live/LiveAppPlayInformation.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveAppPlayInformation.cs	2026-09-06 03:16:34.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveAppPlayInformation.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveAppPlayInformation.cs	2026-09-06 03:36:21.000000000 +0000
 @@ -1,213 +1,213 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -11383,8 +11383,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveAppPlayInformation.cs b/src/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveArea.cs b/src/Models/Models.BiliBili/Live/LiveArea.cs
---- a/src/Models/Models.BiliBili/Live/LiveArea.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveArea.cs	2026-09-06 03:16:35.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveArea.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveArea.cs	2026-09-06 03:36:22.000000000 +0000
 @@ -1,99 +1,99 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -11585,8 +11585,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveArea.cs b/src/Models/Models.Bili
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveAreaDetailResponse.cs b/src/Models/Models.BiliBili/Live/LiveAreaDetailResponse.cs
---- a/src/Models/Models.BiliBili/Live/LiveAreaDetailResponse.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveAreaDetailResponse.cs	2026-09-06 03:16:35.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveAreaDetailResponse.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveAreaDetailResponse.cs	2026-09-06 03:36:22.000000000 +0000
 @@ -1,75 +1,75 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -11739,8 +11739,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveAreaDetailResponse.cs b/src/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveAreaResponse.cs b/src/Models/Models.BiliBili/Live/LiveAreaResponse.cs
---- a/src/Models/Models.BiliBili/Live/LiveAreaResponse.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveAreaResponse.cs	2026-09-06 02:28:54.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveAreaResponse.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveAreaResponse.cs	2026-09-06 03:36:22.000000000 +0000
 @@ -1,20 +1,20 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -11783,8 +11783,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveAreaResponse.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedBanner.cs b/src/Models/Models.BiliBili/Live/LiveFeedBanner.cs
---- a/src/Models/Models.BiliBili/Live/LiveFeedBanner.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveFeedBanner.cs	2026-09-06 02:28:54.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveFeedBanner.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveFeedBanner.cs	2026-09-06 03:36:23.000000000 +0000
 @@ -1,39 +1,39 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -11865,8 +11865,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedBanner.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedCard.cs b/src/Models/Models.BiliBili/Live/LiveFeedCard.cs
---- a/src/Models/Models.BiliBili/Live/LiveFeedCard.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveFeedCard.cs	2026-09-06 02:28:54.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveFeedCard.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveFeedCard.cs	2026-09-06 03:36:23.000000000 +0000
 @@ -1,56 +1,56 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -11981,8 +11981,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedCard.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedExtraCardBase.cs b/src/Models/Models.BiliBili/Live/LiveFeedExtraCardBase.cs
---- a/src/Models/Models.BiliBili/Live/LiveFeedExtraCardBase.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveFeedExtraCardBase.cs	2026-09-06 03:16:36.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveFeedExtraCardBase.cs	2026-09-06 03:39:57.162560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveFeedExtraCardBase.cs	2026-09-06 03:36:23.000000000 +0000
 @@ -1,37 +1,37 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -12059,8 +12059,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedExtraCardBase.cs b/src/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedHotArea.cs b/src/Models/Models.BiliBili/Live/LiveFeedHotArea.cs
---- a/src/Models/Models.BiliBili/Live/LiveFeedHotArea.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveFeedHotArea.cs	2026-09-06 02:28:55.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveFeedHotArea.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveFeedHotArea.cs	2026-09-06 03:36:24.000000000 +0000
 @@ -1,45 +1,45 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -12153,8 +12153,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedHotArea.cs b/src/Models/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedResponse.cs b/src/Models/Models.BiliBili/Live/LiveFeedResponse.cs
---- a/src/Models/Models.BiliBili/Live/LiveFeedResponse.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveFeedResponse.cs	2026-09-06 02:28:55.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveFeedResponse.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveFeedResponse.cs	2026-09-06 03:36:24.000000000 +0000
 @@ -1,20 +1,20 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -12197,8 +12197,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedResponse.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedRoom.cs b/src/Models/Models.BiliBili/Live/LiveFeedRoom.cs
---- a/src/Models/Models.BiliBili/Live/LiveFeedRoom.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveFeedRoom.cs	2026-09-06 03:16:36.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveFeedRoom.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveFeedRoom.cs	2026-09-06 03:36:25.000000000 +0000
 @@ -1,105 +1,105 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -12411,8 +12411,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveFeedRoom.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveMessage.cs b/src/Models/Models.BiliBili/Live/LiveMessage.cs
---- a/src/Models/Models.BiliBili/Live/LiveMessage.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveMessage.cs	2026-09-06 03:16:37.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveMessage.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveMessage.cs	2026-09-06 03:36:25.000000000 +0000
 @@ -1,171 +1,171 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -12757,8 +12757,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveMessage.cs b/src/Models/Models.B
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LivePlayInformation.cs b/src/Models/Models.BiliBili/Live/LivePlayInformation.cs
---- a/src/Models/Models.BiliBili/Live/LivePlayInformation.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LivePlayInformation.cs	2026-09-06 03:16:37.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LivePlayInformation.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LivePlayInformation.cs	2026-09-06 03:36:25.000000000 +0000
 @@ -1,100 +1,100 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -12961,8 +12961,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LivePlayInformation.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveRoomBase.cs b/src/Models/Models.BiliBili/Live/LiveRoomBase.cs
---- a/src/Models/Models.BiliBili/Live/LiveRoomBase.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveRoomBase.cs	2026-09-06 03:16:37.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveRoomBase.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveRoomBase.cs	2026-09-06 03:36:26.000000000 +0000
 @@ -1,111 +1,111 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -13187,8 +13187,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveRoomBase.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveRoomCard.cs b/src/Models/Models.BiliBili/Live/LiveRoomCard.cs
---- a/src/Models/Models.BiliBili/Live/LiveRoomCard.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveRoomCard.cs	2026-09-06 03:16:38.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveRoomCard.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveRoomCard.cs	2026-09-06 03:36:26.000000000 +0000
 @@ -1,140 +1,140 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -13471,8 +13471,8 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveRoomCard.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Live/LiveRoomDetail.cs b/src/Models/Models.BiliBili/Live/LiveRoomDetail.cs
---- a/src/Models/Models.BiliBili/Live/LiveRoomDetail.cs	2026-09-06 03:21:34.803560000 +0000
-+++ b/src/Models/Models.BiliBili/Live/LiveRoomDetail.cs	2026-09-06 03:16:38.000000000 +0000
+--- a/src/Models/Models.BiliBili/Live/LiveRoomDetail.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Live/LiveRoomDetail.cs	2026-09-06 03:36:27.000000000 +0000
 @@ -1,248 +1,248 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -13971,7 +13971,7 @@ diff -ruN a/src/Models/Models.BiliBili/Live/LiveRoomDetail.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Models.BiliBili.csproj b/src/Models/Models.BiliBili/Models.BiliBili.csproj
---- a/src/Models/Models.BiliBili/Models.BiliBili.csproj	2026-09-06 03:21:34.803560000 +0000
+--- a/src/Models/Models.BiliBili/Models.BiliBili.csproj	2026-09-06 03:39:57.163560000 +0000
 +++ b/src/Models/Models.BiliBili/Models.BiliBili.csproj	2026-09-06 01:22:30.000000000 +0000
 @@ -1,13 +1,13 @@
 -<Project Sdk="Microsoft.NET.Sdk">
@@ -14001,8 +14001,8 @@ diff -ruN a/src/Models/Models.BiliBili/Models.BiliBili.csproj b/src/Models/Model
 +
 +</Project>
 diff -ruN a/src/Models/Models.BiliBili/Others/ArticleFavoriteListResponse.cs b/src/Models/Models.BiliBili/Others/ArticleFavoriteListResponse.cs
---- a/src/Models/Models.BiliBili/Others/ArticleFavoriteListResponse.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Others/ArticleFavoriteListResponse.cs	2026-09-06 03:16:39.000000000 +0000
+--- a/src/Models/Models.BiliBili/Others/ArticleFavoriteListResponse.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Others/ArticleFavoriteListResponse.cs	2026-09-06 03:36:27.000000000 +0000
 @@ -1,93 +1,93 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -14191,8 +14191,8 @@ diff -ruN a/src/Models/Models.BiliBili/Others/ArticleFavoriteListResponse.cs b/s
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Others/HomeRecommendInfo.cs b/src/Models/Models.BiliBili/Others/HomeRecommendInfo.cs
---- a/src/Models/Models.BiliBili/Others/HomeRecommendInfo.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Others/HomeRecommendInfo.cs	2026-09-06 02:28:58.000000000 +0000
+--- a/src/Models/Models.BiliBili/Others/HomeRecommendInfo.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Others/HomeRecommendInfo.cs	2026-09-06 03:36:27.000000000 +0000
 @@ -1,20 +1,20 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -14235,8 +14235,8 @@ diff -ruN a/src/Models/Models.BiliBili/Others/HomeRecommendInfo.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Others/PgcFavoriteListResponse.cs b/src/Models/Models.BiliBili/Others/PgcFavoriteListResponse.cs
---- a/src/Models/Models.BiliBili/Others/PgcFavoriteListResponse.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Others/PgcFavoriteListResponse.cs	2026-09-06 03:16:39.000000000 +0000
+--- a/src/Models/Models.BiliBili/Others/PgcFavoriteListResponse.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Others/PgcFavoriteListResponse.cs	2026-09-06 03:36:28.000000000 +0000
 @@ -1,129 +1,129 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -14497,8 +14497,8 @@ diff -ruN a/src/Models/Models.BiliBili/Others/PgcFavoriteListResponse.cs b/src/M
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Others/ServerResponse.cs b/src/Models/Models.BiliBili/Others/ServerResponse.cs
---- a/src/Models/Models.BiliBili/Others/ServerResponse.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Others/ServerResponse.cs	2026-09-06 03:16:40.000000000 +0000
+--- a/src/Models/Models.BiliBili/Others/ServerResponse.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Others/ServerResponse.cs	2026-09-06 03:36:28.000000000 +0000
 @@ -1,73 +1,73 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -14647,8 +14647,8 @@ diff -ruN a/src/Models/Models.BiliBili/Others/ServerResponse.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Others/VideoFavoriteGalleryResponse.cs b/src/Models/Models.BiliBili/Others/VideoFavoriteGalleryResponse.cs
---- a/src/Models/Models.BiliBili/Others/VideoFavoriteGalleryResponse.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Others/VideoFavoriteGalleryResponse.cs	2026-09-06 03:16:40.000000000 +0000
+--- a/src/Models/Models.BiliBili/Others/VideoFavoriteGalleryResponse.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Others/VideoFavoriteGalleryResponse.cs	2026-09-06 03:36:28.000000000 +0000
 @@ -1,327 +1,327 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -15305,8 +15305,8 @@ diff -ruN a/src/Models/Models.BiliBili/Others/VideoFavoriteGalleryResponse.cs b/
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Others/ViewLaterResponse.cs b/src/Models/Models.BiliBili/Others/ViewLaterResponse.cs
---- a/src/Models/Models.BiliBili/Others/ViewLaterResponse.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Others/ViewLaterResponse.cs	2026-09-06 03:16:40.000000000 +0000
+--- a/src/Models/Models.BiliBili/Others/ViewLaterResponse.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Others/ViewLaterResponse.cs	2026-09-06 03:36:29.000000000 +0000
 @@ -1,26 +1,26 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -15361,8 +15361,8 @@ diff -ruN a/src/Models/Models.BiliBili/Others/ViewLaterResponse.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Partition/PartitionBanner.cs b/src/Models/Models.BiliBili/Partition/PartitionBanner.cs
---- a/src/Models/Models.BiliBili/Partition/PartitionBanner.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Partition/PartitionBanner.cs	2026-09-06 03:16:41.000000000 +0000
+--- a/src/Models/Models.BiliBili/Partition/PartitionBanner.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Partition/PartitionBanner.cs	2026-09-06 03:36:30.000000000 +0000
 @@ -1,67 +1,67 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -15499,8 +15499,8 @@ diff -ruN a/src/Models/Models.BiliBili/Partition/PartitionBanner.cs b/src/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Partition/Partition.cs b/src/Models/Models.BiliBili/Partition/Partition.cs
---- a/src/Models/Models.BiliBili/Partition/Partition.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Partition/Partition.cs	2026-09-06 03:16:41.000000000 +0000
+--- a/src/Models/Models.BiliBili/Partition/Partition.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Partition/Partition.cs	2026-09-06 03:36:29.000000000 +0000
 @@ -1,76 +1,76 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -15655,8 +15655,8 @@ diff -ruN a/src/Models/Models.BiliBili/Partition/Partition.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Partition/SubPartition.cs b/src/Models/Models.BiliBili/Partition/SubPartition.cs
---- a/src/Models/Models.BiliBili/Partition/SubPartition.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Partition/SubPartition.cs	2026-09-06 03:16:41.000000000 +0000
+--- a/src/Models/Models.BiliBili/Partition/SubPartition.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Partition/SubPartition.cs	2026-09-06 03:36:30.000000000 +0000
 @@ -1,76 +1,76 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -15811,8 +15811,8 @@ diff -ruN a/src/Models/Models.BiliBili/Partition/SubPartition.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Pgc/EpisodeInteraction.cs b/src/Models/Models.BiliBili/Pgc/EpisodeInteraction.cs
---- a/src/Models/Models.BiliBili/Pgc/EpisodeInteraction.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Pgc/EpisodeInteraction.cs	2026-09-06 03:16:42.000000000 +0000
+--- a/src/Models/Models.BiliBili/Pgc/EpisodeInteraction.cs	2026-09-06 03:39:57.163560000 +0000
++++ b/src/Models/Models.BiliBili/Pgc/EpisodeInteraction.cs	2026-09-06 03:36:30.000000000 +0000
 @@ -1,31 +1,31 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -15877,8 +15877,8 @@ diff -ruN a/src/Models/Models.BiliBili/Pgc/EpisodeInteraction.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcDisplayInformation.cs b/src/Models/Models.BiliBili/Pgc/PgcDisplayInformation.cs
---- a/src/Models/Models.BiliBili/Pgc/PgcDisplayInformation.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Pgc/PgcDisplayInformation.cs	2026-09-06 03:16:42.000000000 +0000
+--- a/src/Models/Models.BiliBili/Pgc/PgcDisplayInformation.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Pgc/PgcDisplayInformation.cs	2026-09-06 03:36:31.000000000 +0000
 @@ -1,926 +1,926 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -17733,8 +17733,8 @@ diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcDisplayInformation.cs b/src/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcIndexConditionResponse.cs b/src/Models/Models.BiliBili/Pgc/PgcIndexConditionResponse.cs
---- a/src/Models/Models.BiliBili/Pgc/PgcIndexConditionResponse.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Pgc/PgcIndexConditionResponse.cs	2026-09-06 02:29:01.000000000 +0000
+--- a/src/Models/Models.BiliBili/Pgc/PgcIndexConditionResponse.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Pgc/PgcIndexConditionResponse.cs	2026-09-06 03:36:31.000000000 +0000
 @@ -1,89 +1,89 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -17915,8 +17915,8 @@ diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcIndexConditionResponse.cs b/src/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcIndexResultResponse.cs b/src/Models/Models.BiliBili/Pgc/PgcIndexResultResponse.cs
---- a/src/Models/Models.BiliBili/Pgc/PgcIndexResultResponse.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Pgc/PgcIndexResultResponse.cs	2026-09-06 03:16:43.000000000 +0000
+--- a/src/Models/Models.BiliBili/Pgc/PgcIndexResultResponse.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Pgc/PgcIndexResultResponse.cs	2026-09-06 03:36:31.000000000 +0000
 @@ -1,111 +1,111 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -18141,8 +18141,8 @@ diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcIndexResultResponse.cs b/src/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcModule.cs b/src/Models/Models.BiliBili/Pgc/PgcModule.cs
---- a/src/Models/Models.BiliBili/Pgc/PgcModule.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Pgc/PgcModule.cs	2026-09-06 03:16:43.000000000 +0000
+--- a/src/Models/Models.BiliBili/Pgc/PgcModule.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Pgc/PgcModule.cs	2026-09-06 03:36:32.000000000 +0000
 @@ -1,247 +1,247 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -18639,8 +18639,8 @@ diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcModule.cs b/src/Models/Models.Bili
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcPlayListResponse.cs b/src/Models/Models.BiliBili/Pgc/PgcPlayListResponse.cs
---- a/src/Models/Models.BiliBili/Pgc/PgcPlayListResponse.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Pgc/PgcPlayListResponse.cs	2026-09-06 03:16:43.000000000 +0000
+--- a/src/Models/Models.BiliBili/Pgc/PgcPlayListResponse.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Pgc/PgcPlayListResponse.cs	2026-09-06 03:36:32.000000000 +0000
 @@ -1,160 +1,160 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -18963,8 +18963,8 @@ diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcPlayListResponse.cs b/src/Models/M
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcResponse.cs b/src/Models/Models.BiliBili/Pgc/PgcResponse.cs
---- a/src/Models/Models.BiliBili/Pgc/PgcResponse.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Pgc/PgcResponse.cs	2026-09-06 02:29:02.000000000 +0000
+--- a/src/Models/Models.BiliBili/Pgc/PgcResponse.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Pgc/PgcResponse.cs	2026-09-06 03:36:33.000000000 +0000
 @@ -1,51 +1,51 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -19069,8 +19069,8 @@ diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcResponse.cs b/src/Models/Models.Bi
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcTab.cs b/src/Models/Models.BiliBili/Pgc/PgcTab.cs
---- a/src/Models/Models.BiliBili/Pgc/PgcTab.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Pgc/PgcTab.cs	2026-09-06 03:16:44.000000000 +0000
+--- a/src/Models/Models.BiliBili/Pgc/PgcTab.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Pgc/PgcTab.cs	2026-09-06 03:36:33.000000000 +0000
 @@ -1,31 +1,31 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -19135,8 +19135,8 @@ diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcTab.cs b/src/Models/Models.BiliBil
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcTimeLineResponse.cs b/src/Models/Models.BiliBili/Pgc/PgcTimeLineResponse.cs
---- a/src/Models/Models.BiliBili/Pgc/PgcTimeLineResponse.cs	2026-09-06 03:21:34.804560000 +0000
-+++ b/src/Models/Models.BiliBili/Pgc/PgcTimeLineResponse.cs	2026-09-06 03:16:44.000000000 +0000
+--- a/src/Models/Models.BiliBili/Pgc/PgcTimeLineResponse.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Pgc/PgcTimeLineResponse.cs	2026-09-06 03:36:34.000000000 +0000
 @@ -1,154 +1,154 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -19447,8 +19447,8 @@ diff -ruN a/src/Models/Models.BiliBili/Pgc/PgcTimeLineResponse.cs b/src/Models/M
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Player/CoinResult.cs b/src/Models/Models.BiliBili/Player/CoinResult.cs
---- a/src/Models/Models.BiliBili/Player/CoinResult.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Player/CoinResult.cs	2026-09-06 02:29:03.000000000 +0000
+--- a/src/Models/Models.BiliBili/Player/CoinResult.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Player/CoinResult.cs	2026-09-06 03:36:34.000000000 +0000
 @@ -1,19 +1,19 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -19489,8 +19489,8 @@ diff -ruN a/src/Models/Models.BiliBili/Player/CoinResult.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Player/FavoriteListResponse.cs b/src/Models/Models.BiliBili/Player/FavoriteListResponse.cs
---- a/src/Models/Models.BiliBili/Player/FavoriteListResponse.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Player/FavoriteListResponse.cs	2026-09-06 03:16:45.000000000 +0000
+--- a/src/Models/Models.BiliBili/Player/FavoriteListResponse.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Player/FavoriteListResponse.cs	2026-09-06 03:36:34.000000000 +0000
 @@ -1,69 +1,69 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -19631,8 +19631,8 @@ diff -ruN a/src/Models/Models.BiliBili/Player/FavoriteListResponse.cs b/src/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Player/InteractionEdgeResponse.cs b/src/Models/Models.BiliBili/Player/InteractionEdgeResponse.cs
---- a/src/Models/Models.BiliBili/Player/InteractionEdgeResponse.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Player/InteractionEdgeResponse.cs	2026-09-06 03:16:45.000000000 +0000
+--- a/src/Models/Models.BiliBili/Player/InteractionEdgeResponse.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Player/InteractionEdgeResponse.cs	2026-09-06 03:36:35.000000000 +0000
 @@ -1,108 +1,108 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -19851,8 +19851,8 @@ diff -ruN a/src/Models/Models.BiliBili/Player/InteractionEdgeResponse.cs b/src/M
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Player/PlayerInformation.cs b/src/Models/Models.BiliBili/Player/PlayerInformation.cs
---- a/src/Models/Models.BiliBili/Player/PlayerInformation.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Player/PlayerInformation.cs	2026-09-06 03:16:46.000000000 +0000
+--- a/src/Models/Models.BiliBili/Player/PlayerInformation.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Player/PlayerInformation.cs	2026-09-06 03:36:35.000000000 +0000
 @@ -1,265 +1,265 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -20385,8 +20385,8 @@ diff -ruN a/src/Models/Models.BiliBili/Player/PlayerInformation.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Player/SubtitleDetailResponse.cs b/src/Models/Models.BiliBili/Player/SubtitleDetailResponse.cs
---- a/src/Models/Models.BiliBili/Player/SubtitleDetailResponse.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Player/SubtitleDetailResponse.cs	2026-09-06 02:29:05.000000000 +0000
+--- a/src/Models/Models.BiliBili/Player/SubtitleDetailResponse.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Player/SubtitleDetailResponse.cs	2026-09-06 03:36:36.000000000 +0000
 @@ -1,45 +1,45 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -20479,8 +20479,8 @@ diff -ruN a/src/Models/Models.BiliBili/Player/SubtitleDetailResponse.cs b/src/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Player/SubtitleIndexResponse.cs b/src/Models/Models.BiliBili/Player/SubtitleIndexResponse.cs
---- a/src/Models/Models.BiliBili/Player/SubtitleIndexResponse.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Player/SubtitleIndexResponse.cs	2026-09-06 02:29:05.000000000 +0000
+--- a/src/Models/Models.BiliBili/Player/SubtitleIndexResponse.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Player/SubtitleIndexResponse.cs	2026-09-06 03:36:36.000000000 +0000
 @@ -1,57 +1,57 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -20597,8 +20597,8 @@ diff -ruN a/src/Models/Models.BiliBili/Player/SubtitleIndexResponse.cs b/src/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Player/TripleResult.cs b/src/Models/Models.BiliBili/Player/TripleResult.cs
---- a/src/Models/Models.BiliBili/Player/TripleResult.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Player/TripleResult.cs	2026-09-06 03:16:46.000000000 +0000
+--- a/src/Models/Models.BiliBili/Player/TripleResult.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Player/TripleResult.cs	2026-09-06 03:36:36.000000000 +0000
 @@ -1,37 +1,37 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -20675,8 +20675,8 @@ diff -ruN a/src/Models/Models.BiliBili/Player/TripleResult.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Search/ArticleSearchItem.cs b/src/Models/Models.BiliBili/Search/ArticleSearchItem.cs
---- a/src/Models/Models.BiliBili/Search/ArticleSearchItem.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Search/ArticleSearchItem.cs	2026-09-06 03:16:46.000000000 +0000
+--- a/src/Models/Models.BiliBili/Search/ArticleSearchItem.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Search/ArticleSearchItem.cs	2026-09-06 03:36:36.000000000 +0000
 @@ -1,67 +1,67 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -20813,8 +20813,8 @@ diff -ruN a/src/Models/Models.BiliBili/Search/ArticleSearchItem.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Search/LiveSearchItem.cs b/src/Models/Models.BiliBili/Search/LiveSearchItem.cs
---- a/src/Models/Models.BiliBili/Search/LiveSearchItem.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Search/LiveSearchItem.cs	2026-09-06 03:16:47.000000000 +0000
+--- a/src/Models/Models.BiliBili/Search/LiveSearchItem.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Search/LiveSearchItem.cs	2026-09-06 03:36:37.000000000 +0000
 @@ -1,84 +1,84 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -20985,8 +20985,8 @@ diff -ruN a/src/Models/Models.BiliBili/Search/LiveSearchItem.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Search/PgcSearchItem.cs b/src/Models/Models.BiliBili/Search/PgcSearchItem.cs
---- a/src/Models/Models.BiliBili/Search/PgcSearchItem.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Search/PgcSearchItem.cs	2026-09-06 03:16:47.000000000 +0000
+--- a/src/Models/Models.BiliBili/Search/PgcSearchItem.cs	2026-09-06 03:39:57.164560000 +0000
++++ b/src/Models/Models.BiliBili/Search/PgcSearchItem.cs	2026-09-06 03:36:37.000000000 +0000
 @@ -1,90 +1,90 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -21169,8 +21169,8 @@ diff -ruN a/src/Models/Models.BiliBili/Search/PgcSearchItem.cs b/src/Models/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Search/SearchItemBase.cs b/src/Models/Models.BiliBili/Search/SearchItemBase.cs
---- a/src/Models/Models.BiliBili/Search/SearchItemBase.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Search/SearchItemBase.cs	2026-09-06 03:16:48.000000000 +0000
+--- a/src/Models/Models.BiliBili/Search/SearchItemBase.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/Search/SearchItemBase.cs	2026-09-06 03:36:38.000000000 +0000
 @@ -1,60 +1,60 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -21293,8 +21293,8 @@ diff -ruN a/src/Models/Models.BiliBili/Search/SearchItemBase.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Search/SearchResultResponse.cs b/src/Models/Models.BiliBili/Search/SearchResultResponse.cs
---- a/src/Models/Models.BiliBili/Search/SearchResultResponse.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Search/SearchResultResponse.cs	2026-09-06 03:16:48.000000000 +0000
+--- a/src/Models/Models.BiliBili/Search/SearchResultResponse.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/Search/SearchResultResponse.cs	2026-09-06 03:36:38.000000000 +0000
 @@ -1,125 +1,125 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -21547,8 +21547,8 @@ diff -ruN a/src/Models/Models.BiliBili/Search/SearchResultResponse.cs b/src/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Search/SearchSquareItem.cs b/src/Models/Models.BiliBili/Search/SearchSquareItem.cs
---- a/src/Models/Models.BiliBili/Search/SearchSquareItem.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Search/SearchSquareItem.cs	2026-09-06 03:16:48.000000000 +0000
+--- a/src/Models/Models.BiliBili/Search/SearchSquareItem.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/Search/SearchSquareItem.cs	2026-09-06 03:36:38.000000000 +0000
 @@ -1,106 +1,106 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -21763,8 +21763,8 @@ diff -ruN a/src/Models/Models.BiliBili/Search/SearchSquareItem.cs b/src/Models/M
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Search/UserSearchItem.cs b/src/Models/Models.BiliBili/Search/UserSearchItem.cs
---- a/src/Models/Models.BiliBili/Search/UserSearchItem.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Search/UserSearchItem.cs	2026-09-06 03:16:49.000000000 +0000
+--- a/src/Models/Models.BiliBili/Search/UserSearchItem.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/Search/UserSearchItem.cs	2026-09-06 03:36:39.000000000 +0000
 @@ -1,72 +1,72 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -21911,8 +21911,8 @@ diff -ruN a/src/Models/Models.BiliBili/Search/UserSearchItem.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/Search/VideoSearchItem.cs b/src/Models/Models.BiliBili/Search/VideoSearchItem.cs
---- a/src/Models/Models.BiliBili/Search/VideoSearchItem.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/Search/VideoSearchItem.cs	2026-09-06 03:16:49.000000000 +0000
+--- a/src/Models/Models.BiliBili/Search/VideoSearchItem.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/Search/VideoSearchItem.cs	2026-09-06 03:36:39.000000000 +0000
 @@ -1,102 +1,102 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -22119,8 +22119,8 @@ diff -ruN a/src/Models/Models.BiliBili/Search/VideoSearchItem.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/User/AtMessageResponse.cs b/src/Models/Models.BiliBili/User/AtMessageResponse.cs
---- a/src/Models/Models.BiliBili/User/AtMessageResponse.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/User/AtMessageResponse.cs	2026-09-06 02:29:09.000000000 +0000
+--- a/src/Models/Models.BiliBili/User/AtMessageResponse.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/User/AtMessageResponse.cs	2026-09-06 03:36:40.000000000 +0000
 @@ -1,82 +1,82 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -22287,8 +22287,8 @@ diff -ruN a/src/Models/Models.BiliBili/User/AtMessageResponse.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/User/LikeMessageResponse.cs b/src/Models/Models.BiliBili/User/LikeMessageResponse.cs
---- a/src/Models/Models.BiliBili/User/LikeMessageResponse.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/User/LikeMessageResponse.cs	2026-09-06 03:16:50.000000000 +0000
+--- a/src/Models/Models.BiliBili/User/LikeMessageResponse.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/User/LikeMessageResponse.cs	2026-09-06 03:36:40.000000000 +0000
 @@ -1,119 +1,119 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -22529,8 +22529,8 @@ diff -ruN a/src/Models/Models.BiliBili/User/LikeMessageResponse.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/User/MessageItem.cs b/src/Models/Models.BiliBili/User/MessageItem.cs
---- a/src/Models/Models.BiliBili/User/MessageItem.cs	2026-09-06 03:21:34.805560000 +0000
-+++ b/src/Models/Models.BiliBili/User/MessageItem.cs	2026-09-06 02:29:09.000000000 +0000
+--- a/src/Models/Models.BiliBili/User/MessageItem.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/User/MessageItem.cs	2026-09-06 03:36:40.000000000 +0000
 @@ -1,87 +1,87 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -22707,8 +22707,8 @@ diff -ruN a/src/Models/Models.BiliBili/User/MessageItem.cs b/src/Models/Models.B
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/User/MessageUser.cs b/src/Models/Models.BiliBili/User/MessageUser.cs
---- a/src/Models/Models.BiliBili/User/MessageUser.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.BiliBili/User/MessageUser.cs	2026-09-06 03:16:50.000000000 +0000
+--- a/src/Models/Models.BiliBili/User/MessageUser.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/User/MessageUser.cs	2026-09-06 03:36:40.000000000 +0000
 @@ -1,43 +1,43 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -22797,8 +22797,8 @@ diff -ruN a/src/Models/Models.BiliBili/User/MessageUser.cs b/src/Models/Models.B
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/User/Mine.cs b/src/Models/Models.BiliBili/User/Mine.cs
---- a/src/Models/Models.BiliBili/User/Mine.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.BiliBili/User/Mine.cs	2026-09-06 03:16:51.000000000 +0000
+--- a/src/Models/Models.BiliBili/User/Mine.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/User/Mine.cs	2026-09-06 03:36:41.000000000 +0000
 @@ -1,73 +1,73 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -22947,8 +22947,8 @@ diff -ruN a/src/Models/Models.BiliBili/User/Mine.cs b/src/Models/Models.BiliBili
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/User/MyInfo.cs b/src/Models/Models.BiliBili/User/MyInfo.cs
---- a/src/Models/Models.BiliBili/User/MyInfo.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.BiliBili/User/MyInfo.cs	2026-09-06 03:16:51.000000000 +0000
+--- a/src/Models/Models.BiliBili/User/MyInfo.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/User/MyInfo.cs	2026-09-06 03:36:41.000000000 +0000
 @@ -1,98 +1,98 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -23147,8 +23147,8 @@ diff -ruN a/src/Models/Models.BiliBili/User/MyInfo.cs b/src/Models/Models.BiliBi
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/User/RelatedUserResponse.cs b/src/Models/Models.BiliBili/User/RelatedUserResponse.cs
---- a/src/Models/Models.BiliBili/User/RelatedUserResponse.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.BiliBili/User/RelatedUserResponse.cs	2026-09-06 03:16:51.000000000 +0000
+--- a/src/Models/Models.BiliBili/User/RelatedUserResponse.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/User/RelatedUserResponse.cs	2026-09-06 03:36:41.000000000 +0000
 @@ -1,118 +1,118 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -23387,8 +23387,8 @@ diff -ruN a/src/Models/Models.BiliBili/User/RelatedUserResponse.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/User/ReplyMessageResponse.cs b/src/Models/Models.BiliBili/User/ReplyMessageResponse.cs
---- a/src/Models/Models.BiliBili/User/ReplyMessageResponse.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.BiliBili/User/ReplyMessageResponse.cs	2026-09-06 03:16:52.000000000 +0000
+--- a/src/Models/Models.BiliBili/User/ReplyMessageResponse.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/User/ReplyMessageResponse.cs	2026-09-06 03:36:42.000000000 +0000
 @@ -1,82 +1,82 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -23555,8 +23555,8 @@ diff -ruN a/src/Models/Models.BiliBili/User/ReplyMessageResponse.cs b/src/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/User/UnreadMessage.cs b/src/Models/Models.BiliBili/User/UnreadMessage.cs
---- a/src/Models/Models.BiliBili/User/UnreadMessage.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.BiliBili/User/UnreadMessage.cs	2026-09-06 03:16:52.000000000 +0000
+--- a/src/Models/Models.BiliBili/User/UnreadMessage.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/User/UnreadMessage.cs	2026-09-06 03:36:42.000000000 +0000
 @@ -1,43 +1,43 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -23645,8 +23645,8 @@ diff -ruN a/src/Models/Models.BiliBili/User/UnreadMessage.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/User/UserRelation.cs b/src/Models/Models.BiliBili/User/UserRelation.cs
---- a/src/Models/Models.BiliBili/User/UserRelation.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.BiliBili/User/UserRelation.cs	2026-09-06 03:16:52.000000000 +0000
+--- a/src/Models/Models.BiliBili/User/UserRelation.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/User/UserRelation.cs	2026-09-06 03:36:43.000000000 +0000
 @@ -1,57 +1,57 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -23763,8 +23763,8 @@ diff -ruN a/src/Models/Models.BiliBili/User/UserRelation.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.BiliBili/User/UserSpaceResponse.cs b/src/Models/Models.BiliBili/User/UserSpaceResponse.cs
---- a/src/Models/Models.BiliBili/User/UserSpaceResponse.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.BiliBili/User/UserSpaceResponse.cs	2026-09-06 03:16:53.000000000 +0000
+--- a/src/Models/Models.BiliBili/User/UserSpaceResponse.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.BiliBili/User/UserSpaceResponse.cs	2026-09-06 03:36:43.000000000 +0000
 @@ -1,333 +1,333 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -24433,8 +24433,8 @@ diff -ruN a/src/Models/Models.BiliBili/User/UserSpaceResponse.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Appearance/Condition.cs b/src/Models/Models.Data/Appearance/Condition.cs
---- a/src/Models/Models.Data/Appearance/Condition.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.Data/Appearance/Condition.cs	2026-09-06 02:29:12.000000000 +0000
+--- a/src/Models/Models.Data/Appearance/Condition.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.Data/Appearance/Condition.cs	2026-09-06 03:36:43.000000000 +0000
 @@ -1,40 +1,40 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -24517,8 +24517,8 @@ diff -ruN a/src/Models/Models.Data/Appearance/Condition.cs b/src/Models/Models.D
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Appearance/EmoteText.cs b/src/Models/Models.Data/Appearance/EmoteText.cs
---- a/src/Models/Models.Data/Appearance/EmoteText.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.Data/Appearance/EmoteText.cs	2026-09-06 02:29:13.000000000 +0000
+--- a/src/Models/Models.Data/Appearance/EmoteText.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.Data/Appearance/EmoteText.cs	2026-09-06 03:36:43.000000000 +0000
 @@ -1,39 +1,39 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -24599,8 +24599,8 @@ diff -ruN a/src/Models/Models.Data/Appearance/EmoteText.cs b/src/Models/Models.D
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Appearance/Filter.cs b/src/Models/Models.Data/Appearance/Filter.cs
---- a/src/Models/Models.Data/Appearance/Filter.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.Data/Appearance/Filter.cs	2026-09-06 02:29:13.000000000 +0000
+--- a/src/Models/Models.Data/Appearance/Filter.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.Data/Appearance/Filter.cs	2026-09-06 03:36:44.000000000 +0000
 @@ -1,46 +1,46 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -24695,8 +24695,8 @@ diff -ruN a/src/Models/Models.Data/Appearance/Filter.cs b/src/Models/Models.Data
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Appearance/Image.cs b/src/Models/Models.Data/Appearance/Image.cs
---- a/src/Models/Models.Data/Appearance/Image.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.Data/Appearance/Image.cs	2026-09-06 02:29:13.000000000 +0000
+--- a/src/Models/Models.Data/Appearance/Image.cs	2026-09-06 03:39:57.165560000 +0000
++++ b/src/Models/Models.Data/Appearance/Image.cs	2026-09-06 03:36:44.000000000 +0000
 @@ -1,86 +1,86 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -24871,8 +24871,8 @@ diff -ruN a/src/Models/Models.Data/Appearance/Image.cs b/src/Models/Models.Data/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Article/ArticleIdentifier.cs b/src/Models/Models.Data/Article/ArticleIdentifier.cs
---- a/src/Models/Models.Data/Article/ArticleIdentifier.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.Data/Article/ArticleIdentifier.cs	2026-09-06 02:29:13.000000000 +0000
+--- a/src/Models/Models.Data/Article/ArticleIdentifier.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Article/ArticleIdentifier.cs	2026-09-06 03:36:44.000000000 +0000
 @@ -1,57 +1,57 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -24989,8 +24989,8 @@ diff -ruN a/src/Models/Models.Data/Article/ArticleIdentifier.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Article/ArticleInformation.cs b/src/Models/Models.Data/Article/ArticleInformation.cs
---- a/src/Models/Models.Data/Article/ArticleInformation.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.Data/Article/ArticleInformation.cs	2026-09-06 03:16:53.000000000 +0000
+--- a/src/Models/Models.Data/Article/ArticleInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Article/ArticleInformation.cs	2026-09-06 03:36:45.000000000 +0000
 @@ -1,92 +1,92 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -25177,8 +25177,8 @@ diff -ruN a/src/Models/Models.Data/Article/ArticleInformation.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Article/ArticlePartitionView.cs b/src/Models/Models.Data/Article/ArticlePartitionView.cs
---- a/src/Models/Models.Data/Article/ArticlePartitionView.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.Data/Article/ArticlePartitionView.cs	2026-09-06 02:29:14.000000000 +0000
+--- a/src/Models/Models.Data/Article/ArticlePartitionView.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Article/ArticlePartitionView.cs	2026-09-06 03:36:45.000000000 +0000
 @@ -1,44 +1,44 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -25269,8 +25269,8 @@ diff -ruN a/src/Models/Models.Data/Article/ArticlePartitionView.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Article/ArticleSet.cs b/src/Models/Models.Data/Article/ArticleSet.cs
---- a/src/Models/Models.Data/Article/ArticleSet.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.Data/Article/ArticleSet.cs	2026-09-06 02:29:14.000000000 +0000
+--- a/src/Models/Models.Data/Article/ArticleSet.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Article/ArticleSet.cs	2026-09-06 03:36:46.000000000 +0000
 @@ -1,26 +1,26 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -25317,7 +25317,7 @@ diff -ruN a/src/Models/Models.Data/Article/ArticleSet.cs b/src/Models/Models.Dat
 +        /// <param name="totalCount">文章总数.</param>
 +        public ArticleSet(
 +            IEnumerable<ArticleInformation> items,
-+            int totalCount)
++            long totalCount)
 +        {
 +            Items = items;
 +            TotalCount = totalCount;
@@ -25325,8 +25325,8 @@ diff -ruN a/src/Models/Models.Data/Article/ArticleSet.cs b/src/Models/Models.Dat
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/ArticleCommunityInformation.cs b/src/Models/Models.Data/Community/ArticleCommunityInformation.cs
---- a/src/Models/Models.Data/Community/ArticleCommunityInformation.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.Data/Community/ArticleCommunityInformation.cs	2026-09-06 02:29:15.000000000 +0000
+--- a/src/Models/Models.Data/Community/ArticleCommunityInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/ArticleCommunityInformation.cs	2026-09-06 03:36:46.000000000 +0000
 @@ -1,79 +1,79 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -25487,8 +25487,8 @@ diff -ruN a/src/Models/Models.Data/Community/ArticleCommunityInformation.cs b/sr
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/BannerIdentifier.cs b/src/Models/Models.Data/Community/BannerIdentifier.cs
---- a/src/Models/Models.Data/Community/BannerIdentifier.cs	2026-09-06 03:21:34.806560000 +0000
-+++ b/src/Models/Models.Data/Community/BannerIdentifier.cs	2026-09-06 02:29:15.000000000 +0000
+--- a/src/Models/Models.Data/Community/BannerIdentifier.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/BannerIdentifier.cs	2026-09-06 03:36:46.000000000 +0000
 @@ -1,51 +1,51 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -25593,8 +25593,8 @@ diff -ruN a/src/Models/Models.Data/Community/BannerIdentifier.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/CommentCommunityInformation.cs b/src/Models/Models.Data/Community/CommentCommunityInformation.cs
---- a/src/Models/Models.Data/Community/CommentCommunityInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/CommentCommunityInformation.cs	2026-09-06 03:16:54.000000000 +0000
+--- a/src/Models/Models.Data/Community/CommentCommunityInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/CommentCommunityInformation.cs	2026-09-06 03:36:47.000000000 +0000
 @@ -1,55 +1,55 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -25707,8 +25707,8 @@ diff -ruN a/src/Models/Models.Data/Community/CommentCommunityInformation.cs b/sr
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/CommentInformation.cs b/src/Models/Models.Data/Community/CommentInformation.cs
---- a/src/Models/Models.Data/Community/CommentInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/CommentInformation.cs	2026-09-06 02:29:16.000000000 +0000
+--- a/src/Models/Models.Data/Community/CommentInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/CommentInformation.cs	2026-09-06 03:36:47.000000000 +0000
 @@ -1,94 +1,94 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -25899,8 +25899,8 @@ diff -ruN a/src/Models/Models.Data/Community/CommentInformation.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/CommentView.cs b/src/Models/Models.Data/Community/CommentView.cs
---- a/src/Models/Models.Data/Community/CommentView.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/CommentView.cs	2026-09-06 02:29:16.000000000 +0000
+--- a/src/Models/Models.Data/Community/CommentView.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/CommentView.cs	2026-09-06 03:36:48.000000000 +0000
 @@ -1,57 +1,57 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -26017,8 +26017,8 @@ diff -ruN a/src/Models/Models.Data/Community/CommentView.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/DynamicCommunityInformation.cs b/src/Models/Models.Data/Community/DynamicCommunityInformation.cs
---- a/src/Models/Models.Data/Community/DynamicCommunityInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/DynamicCommunityInformation.cs	2026-09-06 02:29:16.000000000 +0000
+--- a/src/Models/Models.Data/Community/DynamicCommunityInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/DynamicCommunityInformation.cs	2026-09-06 03:36:48.000000000 +0000
 @@ -1,55 +1,55 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -26131,8 +26131,8 @@ diff -ruN a/src/Models/Models.Data/Community/DynamicCommunityInformation.cs b/sr
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/EpisodeInteractionInformation.cs b/src/Models/Models.Data/Community/EpisodeInteractionInformation.cs
---- a/src/Models/Models.Data/Community/EpisodeInteractionInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/EpisodeInteractionInformation.cs	2026-09-06 02:29:17.000000000 +0000
+--- a/src/Models/Models.Data/Community/EpisodeInteractionInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/EpisodeInteractionInformation.cs	2026-09-06 03:36:48.000000000 +0000
 @@ -1,38 +1,38 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -26211,8 +26211,8 @@ diff -ruN a/src/Models/Models.Data/Community/EpisodeInteractionInformation.cs b/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/FollowGroup.cs b/src/Models/Models.Data/Community/FollowGroup.cs
---- a/src/Models/Models.Data/Community/FollowGroup.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/FollowGroup.cs	2026-09-06 03:16:55.000000000 +0000
+--- a/src/Models/Models.Data/Community/FollowGroup.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/FollowGroup.cs	2026-09-06 03:36:49.000000000 +0000
 @@ -1,44 +1,44 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -26273,7 +26273,7 @@ diff -ruN a/src/Models/Models.Data/Community/FollowGroup.cs b/src/Models/Models.
 +        /// <param name="id">组标识.</param>
 +        /// <param name="name">组名.</param>
 +        /// <param name="totalCount">人数.</param>
-+        public FollowGroup(string id, string name, int totalCount)
++        public FollowGroup(string id, string name, long totalCount)
 +        {
 +            Id = id;
 +            Name = name;
@@ -26303,8 +26303,8 @@ diff -ruN a/src/Models/Models.Data/Community/FollowGroup.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/MessageInformation.cs b/src/Models/Models.Data/Community/MessageInformation.cs
---- a/src/Models/Models.Data/Community/MessageInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/MessageInformation.cs	2026-09-06 02:29:17.000000000 +0000
+--- a/src/Models/Models.Data/Community/MessageInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/MessageInformation.cs	2026-09-06 03:36:49.000000000 +0000
 @@ -1,122 +1,122 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -26551,8 +26551,8 @@ diff -ruN a/src/Models/Models.Data/Community/MessageInformation.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/MessageView.cs b/src/Models/Models.Data/Community/MessageView.cs
---- a/src/Models/Models.Data/Community/MessageView.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/MessageView.cs	2026-09-06 02:29:18.000000000 +0000
+--- a/src/Models/Models.Data/Community/MessageView.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/MessageView.cs	2026-09-06 03:36:50.000000000 +0000
 @@ -1,35 +1,35 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -26625,8 +26625,8 @@ diff -ruN a/src/Models/Models.Data/Community/MessageView.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/Partition.cs b/src/Models/Models.Data/Community/Partition.cs
---- a/src/Models/Models.Data/Community/Partition.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/Partition.cs	2026-09-06 02:29:18.000000000 +0000
+--- a/src/Models/Models.Data/Community/Partition.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/Partition.cs	2026-09-06 03:36:50.000000000 +0000
 @@ -1,77 +1,77 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -26783,8 +26783,8 @@ diff -ruN a/src/Models/Models.Data/Community/Partition.cs b/src/Models/Models.Da
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/Tag.cs b/src/Models/Models.Data/Community/Tag.cs
---- a/src/Models/Models.Data/Community/Tag.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/Tag.cs	2026-09-06 02:29:18.000000000 +0000
+--- a/src/Models/Models.Data/Community/Tag.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/Tag.cs	2026-09-06 03:36:50.000000000 +0000
 @@ -1,51 +1,51 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -26889,8 +26889,8 @@ diff -ruN a/src/Models/Models.Data/Community/Tag.cs b/src/Models/Models.Data/Com
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/TripleInformation.cs b/src/Models/Models.Data/Community/TripleInformation.cs
---- a/src/Models/Models.Data/Community/TripleInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/TripleInformation.cs	2026-09-06 02:29:19.000000000 +0000
+--- a/src/Models/Models.Data/Community/TripleInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/TripleInformation.cs	2026-09-06 03:36:51.000000000 +0000
 @@ -1,45 +1,45 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -26983,8 +26983,8 @@ diff -ruN a/src/Models/Models.Data/Community/TripleInformation.cs b/src/Models/M
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/UnreadInformation.cs b/src/Models/Models.Data/Community/UnreadInformation.cs
---- a/src/Models/Models.Data/Community/UnreadInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/UnreadInformation.cs	2026-09-06 03:16:56.000000000 +0000
+--- a/src/Models/Models.Data/Community/UnreadInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/UnreadInformation.cs	2026-09-06 03:36:51.000000000 +0000
 @@ -1,46 +1,46 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -27079,8 +27079,8 @@ diff -ruN a/src/Models/Models.Data/Community/UnreadInformation.cs b/src/Models/M
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/UserCommunityInformation.cs b/src/Models/Models.Data/Community/UserCommunityInformation.cs
---- a/src/Models/Models.Data/Community/UserCommunityInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/UserCommunityInformation.cs	2026-09-06 02:29:19.000000000 +0000
+--- a/src/Models/Models.Data/Community/UserCommunityInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/UserCommunityInformation.cs	2026-09-06 03:36:51.000000000 +0000
 @@ -1,91 +1,91 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -27265,8 +27265,8 @@ diff -ruN a/src/Models/Models.Data/Community/UserCommunityInformation.cs b/src/M
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/VideoCommunityInformation.cs b/src/Models/Models.Data/Community/VideoCommunityInformation.cs
---- a/src/Models/Models.Data/Community/VideoCommunityInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/VideoCommunityInformation.cs	2026-09-06 02:29:19.000000000 +0000
+--- a/src/Models/Models.Data/Community/VideoCommunityInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/VideoCommunityInformation.cs	2026-09-06 03:36:52.000000000 +0000
 @@ -1,118 +1,118 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -27505,8 +27505,8 @@ diff -ruN a/src/Models/Models.Data/Community/VideoCommunityInformation.cs b/src/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Community/VideoOpeartionInformation.cs b/src/Models/Models.Data/Community/VideoOpeartionInformation.cs
---- a/src/Models/Models.Data/Community/VideoOpeartionInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Community/VideoOpeartionInformation.cs	2026-09-06 02:29:20.000000000 +0000
+--- a/src/Models/Models.Data/Community/VideoOpeartionInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Community/VideoOpeartionInformation.cs	2026-09-06 03:36:52.000000000 +0000
 @@ -1,70 +1,70 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -27649,8 +27649,8 @@ diff -ruN a/src/Models/Models.Data/Community/VideoOpeartionInformation.cs b/src/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Dynamic/DynamicInformation.cs b/src/Models/Models.Data/Dynamic/DynamicInformation.cs
---- a/src/Models/Models.Data/Dynamic/DynamicInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Dynamic/DynamicInformation.cs	2026-09-06 02:29:20.000000000 +0000
+--- a/src/Models/Models.Data/Dynamic/DynamicInformation.cs	2026-09-06 03:39:57.166560000 +0000
++++ b/src/Models/Models.Data/Dynamic/DynamicInformation.cs	2026-09-06 03:36:52.000000000 +0000
 @@ -1,101 +1,101 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -27855,8 +27855,8 @@ diff -ruN a/src/Models/Models.Data/Dynamic/DynamicInformation.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Dynamic/DynamicView.cs b/src/Models/Models.Data/Dynamic/DynamicView.cs
---- a/src/Models/Models.Data/Dynamic/DynamicView.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Dynamic/DynamicView.cs	2026-09-06 02:29:20.000000000 +0000
+--- a/src/Models/Models.Data/Dynamic/DynamicView.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Dynamic/DynamicView.cs	2026-09-06 03:36:53.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -27909,8 +27909,8 @@ diff -ruN a/src/Models/Models.Data/Dynamic/DynamicView.cs b/src/Models/Models.Da
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Live/LiveDanmakuInformation.cs b/src/Models/Models.Data/Live/LiveDanmakuInformation.cs
---- a/src/Models/Models.Data/Live/LiveDanmakuInformation.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Live/LiveDanmakuInformation.cs	2026-09-06 02:29:21.000000000 +0000
+--- a/src/Models/Models.Data/Live/LiveDanmakuInformation.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Live/LiveDanmakuInformation.cs	2026-09-06 03:36:53.000000000 +0000
 @@ -1,62 +1,62 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -28037,8 +28037,8 @@ diff -ruN a/src/Models/Models.Data/Live/LiveDanmakuInformation.cs b/src/Models/M
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Live/LiveFeedView.cs b/src/Models/Models.Data/Live/LiveFeedView.cs
---- a/src/Models/Models.Data/Live/LiveFeedView.cs	2026-09-06 03:21:34.807560000 +0000
-+++ b/src/Models/Models.Data/Live/LiveFeedView.cs	2026-09-06 02:29:21.000000000 +0000
+--- a/src/Models/Models.Data/Live/LiveFeedView.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Live/LiveFeedView.cs	2026-09-06 03:36:54.000000000 +0000
 @@ -1,52 +1,52 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -28145,8 +28145,8 @@ diff -ruN a/src/Models/Models.Data/Live/LiveFeedView.cs b/src/Models/Models.Data
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Live/LiveInformation.cs b/src/Models/Models.Data/Live/LiveInformation.cs
---- a/src/Models/Models.Data/Live/LiveInformation.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Live/LiveInformation.cs	2026-09-06 02:29:21.000000000 +0000
+--- a/src/Models/Models.Data/Live/LiveInformation.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Live/LiveInformation.cs	2026-09-06 03:36:54.000000000 +0000
 @@ -1,74 +1,74 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -28297,8 +28297,8 @@ diff -ruN a/src/Models/Models.Data/Live/LiveInformation.cs b/src/Models/Models.D
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Live/LiveMediaInformation.cs b/src/Models/Models.Data/Live/LiveMediaInformation.cs
---- a/src/Models/Models.Data/Live/LiveMediaInformation.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Live/LiveMediaInformation.cs	2026-09-06 02:29:22.000000000 +0000
+--- a/src/Models/Models.Data/Live/LiveMediaInformation.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Live/LiveMediaInformation.cs	2026-09-06 03:36:54.000000000 +0000
 @@ -1,44 +1,44 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -28389,8 +28389,8 @@ diff -ruN a/src/Models/Models.Data/Live/LiveMediaInformation.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Live/LivePartitionView.cs b/src/Models/Models.Data/Live/LivePartitionView.cs
---- a/src/Models/Models.Data/Live/LivePartitionView.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Live/LivePartitionView.cs	2026-09-06 03:16:57.000000000 +0000
+--- a/src/Models/Models.Data/Live/LivePartitionView.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Live/LivePartitionView.cs	2026-09-06 03:36:55.000000000 +0000
 @@ -1,54 +1,54 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -28464,7 +28464,7 @@ diff -ruN a/src/Models/Models.Data/Live/LivePartitionView.cs b/src/Models/Models
 +        /// <param name="lives">直播间列表.</param>
 +        /// <param name="tags">分类标签列表.</param>
 +        public LivePartitionView(
-+            int totalCount,
++            long totalCount,
 +            IEnumerable<LiveInformation> lives,
 +            IEnumerable<LiveTag> tags)
 +        {
@@ -28501,8 +28501,8 @@ diff -ruN a/src/Models/Models.Data/Live/LivePartitionView.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Live/LivePlayerView.cs b/src/Models/Models.Data/Live/LivePlayerView.cs
---- a/src/Models/Models.Data/Live/LivePlayerView.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Live/LivePlayerView.cs	2026-09-06 02:29:23.000000000 +0000
+--- a/src/Models/Models.Data/Live/LivePlayerView.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Live/LivePlayerView.cs	2026-09-06 03:36:55.000000000 +0000
 @@ -1,39 +1,39 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -28583,8 +28583,8 @@ diff -ruN a/src/Models/Models.Data/Live/LivePlayerView.cs b/src/Models/Models.Da
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Live/LivePlaylineInformation.cs b/src/Models/Models.Data/Live/LivePlaylineInformation.cs
---- a/src/Models/Models.Data/Live/LivePlaylineInformation.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Live/LivePlaylineInformation.cs	2026-09-06 03:16:57.000000000 +0000
+--- a/src/Models/Models.Data/Live/LivePlaylineInformation.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Live/LivePlaylineInformation.cs	2026-09-06 03:36:56.000000000 +0000
 @@ -1,51 +1,51 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -28689,8 +28689,8 @@ diff -ruN a/src/Models/Models.Data/Live/LivePlaylineInformation.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Live/LivePlayUrl.cs b/src/Models/Models.Data/Live/LivePlayUrl.cs
---- a/src/Models/Models.Data/Live/LivePlayUrl.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Live/LivePlayUrl.cs	2026-09-06 02:29:22.000000000 +0000
+--- a/src/Models/Models.Data/Live/LivePlayUrl.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Live/LivePlayUrl.cs	2026-09-06 03:36:55.000000000 +0000
 @@ -1,42 +1,42 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -28777,8 +28777,8 @@ diff -ruN a/src/Models/Models.Data/Live/LivePlayUrl.cs b/src/Models/Models.Data/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Live/LiveTag.cs b/src/Models/Models.Data/Live/LiveTag.cs
---- a/src/Models/Models.Data/Live/LiveTag.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Live/LiveTag.cs	2026-09-06 02:29:23.000000000 +0000
+--- a/src/Models/Models.Data/Live/LiveTag.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Live/LiveTag.cs	2026-09-06 03:36:56.000000000 +0000
 @@ -1,44 +1,44 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -28869,8 +28869,8 @@ diff -ruN a/src/Models/Models.Data/Live/LiveTag.cs b/src/Models/Models.Data/Live
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Local/Cache.cs b/src/Models/Models.Data/Local/Cache.cs
---- a/src/Models/Models.Data/Local/Cache.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Local/Cache.cs	2026-09-06 02:29:24.000000000 +0000
+--- a/src/Models/Models.Data/Local/Cache.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Local/Cache.cs	2026-09-06 03:36:57.000000000 +0000
 @@ -1,34 +1,34 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -28941,8 +28941,8 @@ diff -ruN a/src/Models/Models.Data/Local/Cache.cs b/src/Models/Models.Data/Local
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Local/ContentSet.cs b/src/Models/Models.Data/Local/ContentSet.cs
---- a/src/Models/Models.Data/Local/ContentSet.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Local/ContentSet.cs	2026-09-06 03:16:58.000000000 +0000
+--- a/src/Models/Models.Data/Local/ContentSet.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Local/ContentSet.cs	2026-09-06 03:36:57.000000000 +0000
 @@ -1,30 +1,30 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -29005,8 +29005,8 @@ diff -ruN a/src/Models/Models.Data/Local/ContentSet.cs b/src/Models/Models.Data/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Local/FixedItem.cs b/src/Models/Models.Data/Local/FixedItem.cs
---- a/src/Models/Models.Data/Local/FixedItem.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Local/FixedItem.cs	2026-09-06 02:29:24.000000000 +0000
+--- a/src/Models/Models.Data/Local/FixedItem.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Local/FixedItem.cs	2026-09-06 03:36:57.000000000 +0000
 @@ -1,56 +1,56 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -29121,8 +29121,8 @@ diff -ruN a/src/Models/Models.Data/Local/FixedItem.cs b/src/Models/Models.Data/L
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Local/KeyValue.cs b/src/Models/Models.Data/Local/KeyValue.cs
---- a/src/Models/Models.Data/Local/KeyValue.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Local/KeyValue.cs	2026-09-06 02:29:24.000000000 +0000
+--- a/src/Models/Models.Data/Local/KeyValue.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Local/KeyValue.cs	2026-09-06 03:36:58.000000000 +0000
 @@ -1,38 +1,38 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -29201,8 +29201,8 @@ diff -ruN a/src/Models/Models.Data/Local/KeyValue.cs b/src/Models/Models.Data/Lo
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Local/PlayRecord.cs b/src/Models/Models.Data/Local/PlayRecord.cs
---- a/src/Models/Models.Data/Local/PlayRecord.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Local/PlayRecord.cs	2026-09-06 02:29:25.000000000 +0000
+--- a/src/Models/Models.Data/Local/PlayRecord.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Local/PlayRecord.cs	2026-09-06 03:36:58.000000000 +0000
 @@ -1,38 +1,38 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -29281,8 +29281,8 @@ diff -ruN a/src/Models/Models.Data/Local/PlayRecord.cs b/src/Models/Models.Data/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Local/PlaySnapshot.cs b/src/Models/Models.Data/Local/PlaySnapshot.cs
---- a/src/Models/Models.Data/Local/PlaySnapshot.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Local/PlaySnapshot.cs	2026-09-06 02:29:25.000000000 +0000
+--- a/src/Models/Models.Data/Local/PlaySnapshot.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Local/PlaySnapshot.cs	2026-09-06 03:36:58.000000000 +0000
 @@ -1,72 +1,72 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -29429,7 +29429,7 @@ diff -ruN a/src/Models/Models.Data/Local/PlaySnapshot.cs b/src/Models/Models.Dat
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Models.Data.csproj b/src/Models/Models.Data/Models.Data.csproj
---- a/src/Models/Models.Data/Models.Data.csproj	2026-09-06 03:21:34.808560000 +0000
+--- a/src/Models/Models.Data/Models.Data.csproj	2026-09-06 03:39:57.167560000 +0000
 +++ b/src/Models/Models.Data/Models.Data.csproj	2026-09-06 01:22:30.000000000 +0000
 @@ -1,14 +1,14 @@
 -<Project Sdk="Microsoft.NET.Sdk">
@@ -29461,8 +29461,8 @@ diff -ruN a/src/Models/Models.Data/Models.Data.csproj b/src/Models/Models.Data/M
 +
 +</Project>
 diff -ruN a/src/Models/Models.Data/Pgc/EpisodeInformation.cs b/src/Models/Models.Data/Pgc/EpisodeInformation.cs
---- a/src/Models/Models.Data/Pgc/EpisodeInformation.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Pgc/EpisodeInformation.cs	2026-09-06 03:16:59.000000000 +0000
+--- a/src/Models/Models.Data/Pgc/EpisodeInformation.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Pgc/EpisodeInformation.cs	2026-09-06 03:36:59.000000000 +0000
 @@ -1,127 +1,127 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -29719,8 +29719,8 @@ diff -ruN a/src/Models/Models.Data/Pgc/EpisodeInformation.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Pgc/PgcPageView.cs b/src/Models/Models.Data/Pgc/PgcPageView.cs
---- a/src/Models/Models.Data/Pgc/PgcPageView.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Pgc/PgcPageView.cs	2026-09-06 02:29:26.000000000 +0000
+--- a/src/Models/Models.Data/Pgc/PgcPageView.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Pgc/PgcPageView.cs	2026-09-06 03:36:59.000000000 +0000
 @@ -1,60 +1,60 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -29843,8 +29843,8 @@ diff -ruN a/src/Models/Models.Data/Pgc/PgcPageView.cs b/src/Models/Models.Data/P
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Pgc/PgcPlayerView.cs b/src/Models/Models.Data/Pgc/PgcPlayerView.cs
---- a/src/Models/Models.Data/Pgc/PgcPlayerView.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Pgc/PgcPlayerView.cs	2026-09-06 02:29:26.000000000 +0000
+--- a/src/Models/Models.Data/Pgc/PgcPlayerView.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Pgc/PgcPlayerView.cs	2026-09-06 03:36:59.000000000 +0000
 @@ -1,75 +1,75 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -29997,8 +29997,8 @@ diff -ruN a/src/Models/Models.Data/Pgc/PgcPlayerView.cs b/src/Models/Models.Data
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Pgc/PgcPlaylist.cs b/src/Models/Models.Data/Pgc/PgcPlaylist.cs
---- a/src/Models/Models.Data/Pgc/PgcPlaylist.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Pgc/PgcPlaylist.cs	2026-09-06 02:29:26.000000000 +0000
+--- a/src/Models/Models.Data/Pgc/PgcPlaylist.cs	2026-09-06 03:39:57.167560000 +0000
++++ b/src/Models/Models.Data/Pgc/PgcPlaylist.cs	2026-09-06 03:37:00.000000000 +0000
 @@ -1,57 +1,57 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -30115,8 +30115,8 @@ diff -ruN a/src/Models/Models.Data/Pgc/PgcPlaylist.cs b/src/Models/Models.Data/P
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Pgc/SeasonInformation.cs b/src/Models/Models.Data/Pgc/SeasonInformation.cs
---- a/src/Models/Models.Data/Pgc/SeasonInformation.cs	2026-09-06 03:21:34.808560000 +0000
-+++ b/src/Models/Models.Data/Pgc/SeasonInformation.cs	2026-09-06 03:16:59.000000000 +0000
+--- a/src/Models/Models.Data/Pgc/SeasonInformation.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Pgc/SeasonInformation.cs	2026-09-06 03:37:00.000000000 +0000
 @@ -1,153 +1,153 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -30425,8 +30425,8 @@ diff -ruN a/src/Models/Models.Data/Pgc/SeasonInformation.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Pgc/SeasonSet.cs b/src/Models/Models.Data/Pgc/SeasonSet.cs
---- a/src/Models/Models.Data/Pgc/SeasonSet.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Pgc/SeasonSet.cs	2026-09-06 02:29:27.000000000 +0000
+--- a/src/Models/Models.Data/Pgc/SeasonSet.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Pgc/SeasonSet.cs	2026-09-06 03:37:00.000000000 +0000
 @@ -1,26 +1,26 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -30473,7 +30473,7 @@ diff -ruN a/src/Models/Models.Data/Pgc/SeasonSet.cs b/src/Models/Models.Data/Pgc
 +        /// <param name="totalCount">剧集总数.</param>
 +        public SeasonSet(
 +            IEnumerable<SeasonInformation> items,
-+            int totalCount)
++            long totalCount)
 +        {
 +            Items = items;
 +            TotalCount = totalCount;
@@ -30481,8 +30481,8 @@ diff -ruN a/src/Models/Models.Data/Pgc/SeasonSet.cs b/src/Models/Models.Data/Pgc
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Pgc/TimelineInformation.cs b/src/Models/Models.Data/Pgc/TimelineInformation.cs
---- a/src/Models/Models.Data/Pgc/TimelineInformation.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Pgc/TimelineInformation.cs	2026-09-06 02:29:27.000000000 +0000
+--- a/src/Models/Models.Data/Pgc/TimelineInformation.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Pgc/TimelineInformation.cs	2026-09-06 03:37:01.000000000 +0000
 @@ -1,57 +1,57 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -30599,8 +30599,8 @@ diff -ruN a/src/Models/Models.Data/Pgc/TimelineInformation.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Pgc/TimelineView.cs b/src/Models/Models.Data/Pgc/TimelineView.cs
---- a/src/Models/Models.Data/Pgc/TimelineView.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Pgc/TimelineView.cs	2026-09-06 02:29:27.000000000 +0000
+--- a/src/Models/Models.Data/Pgc/TimelineView.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Pgc/TimelineView.cs	2026-09-06 03:37:01.000000000 +0000
 @@ -1,43 +1,43 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -30689,8 +30689,8 @@ diff -ruN a/src/Models/Models.Data/Pgc/TimelineView.cs b/src/Models/Models.Data/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Player/DanmakuInformation.cs b/src/Models/Models.Data/Player/DanmakuInformation.cs
---- a/src/Models/Models.Data/Player/DanmakuInformation.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Player/DanmakuInformation.cs	2026-09-06 03:17:00.000000000 +0000
+--- a/src/Models/Models.Data/Player/DanmakuInformation.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Player/DanmakuInformation.cs	2026-09-06 03:37:01.000000000 +0000
 @@ -1,65 +1,65 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -30823,8 +30823,8 @@ diff -ruN a/src/Models/Models.Data/Player/DanmakuInformation.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Player/FormatInformation.cs b/src/Models/Models.Data/Player/FormatInformation.cs
---- a/src/Models/Models.Data/Player/FormatInformation.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Player/FormatInformation.cs	2026-09-06 03:17:00.000000000 +0000
+--- a/src/Models/Models.Data/Player/FormatInformation.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Player/FormatInformation.cs	2026-09-06 03:37:02.000000000 +0000
 @@ -1,44 +1,44 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -30915,8 +30915,8 @@ diff -ruN a/src/Models/Models.Data/Player/FormatInformation.cs b/src/Models/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Player/InteractionInformation.cs b/src/Models/Models.Data/Player/InteractionInformation.cs
---- a/src/Models/Models.Data/Player/InteractionInformation.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Player/InteractionInformation.cs	2026-09-06 02:29:28.000000000 +0000
+--- a/src/Models/Models.Data/Player/InteractionInformation.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Player/InteractionInformation.cs	2026-09-06 03:37:02.000000000 +0000
 @@ -1,58 +1,58 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -31035,8 +31035,8 @@ diff -ruN a/src/Models/Models.Data/Player/InteractionInformation.cs b/src/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Player/MediaInformation.cs b/src/Models/Models.Data/Player/MediaInformation.cs
---- a/src/Models/Models.Data/Player/MediaInformation.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Player/MediaInformation.cs	2026-09-06 02:29:29.000000000 +0000
+--- a/src/Models/Models.Data/Player/MediaInformation.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Player/MediaInformation.cs	2026-09-06 03:37:02.000000000 +0000
 @@ -1,51 +1,51 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -31141,8 +31141,8 @@ diff -ruN a/src/Models/Models.Data/Player/MediaInformation.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Player/PlayedProgress.cs b/src/Models/Models.Data/Player/PlayedProgress.cs
---- a/src/Models/Models.Data/Player/PlayedProgress.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Player/PlayedProgress.cs	2026-09-06 02:29:29.000000000 +0000
+--- a/src/Models/Models.Data/Player/PlayedProgress.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Player/PlayedProgress.cs	2026-09-06 03:37:03.000000000 +0000
 @@ -1,51 +1,51 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -31247,8 +31247,8 @@ diff -ruN a/src/Models/Models.Data/Player/PlayedProgress.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Player/SegmentInformation.cs b/src/Models/Models.Data/Player/SegmentInformation.cs
---- a/src/Models/Models.Data/Player/SegmentInformation.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Player/SegmentInformation.cs	2026-09-06 03:17:01.000000000 +0000
+--- a/src/Models/Models.Data/Player/SegmentInformation.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Player/SegmentInformation.cs	2026-09-06 03:37:03.000000000 +0000
 @@ -1,112 +1,112 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -31475,8 +31475,8 @@ diff -ruN a/src/Models/Models.Data/Player/SegmentInformation.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Player/SubtitleInformation.cs b/src/Models/Models.Data/Player/SubtitleInformation.cs
---- a/src/Models/Models.Data/Player/SubtitleInformation.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Player/SubtitleInformation.cs	2026-09-06 02:29:29.000000000 +0000
+--- a/src/Models/Models.Data/Player/SubtitleInformation.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Player/SubtitleInformation.cs	2026-09-06 03:37:03.000000000 +0000
 @@ -1,35 +1,35 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -31549,8 +31549,8 @@ diff -ruN a/src/Models/Models.Data/Player/SubtitleInformation.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Player/SubtitleMeta.cs b/src/Models/Models.Data/Player/SubtitleMeta.cs
---- a/src/Models/Models.Data/Player/SubtitleMeta.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Player/SubtitleMeta.cs	2026-09-06 02:29:30.000000000 +0000
+--- a/src/Models/Models.Data/Player/SubtitleMeta.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Player/SubtitleMeta.cs	2026-09-06 03:37:04.000000000 +0000
 @@ -1,41 +1,41 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -31635,8 +31635,8 @@ diff -ruN a/src/Models/Models.Data/Player/SubtitleMeta.cs b/src/Models/Models.Da
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Search/ComprehensiveSet.cs b/src/Models/Models.Data/Search/ComprehensiveSet.cs
---- a/src/Models/Models.Data/Search/ComprehensiveSet.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Search/ComprehensiveSet.cs	2026-09-06 02:29:30.000000000 +0000
+--- a/src/Models/Models.Data/Search/ComprehensiveSet.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Search/ComprehensiveSet.cs	2026-09-06 03:37:04.000000000 +0000
 @@ -1,37 +1,37 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -31713,8 +31713,8 @@ diff -ruN a/src/Models/Models.Data/Search/ComprehensiveSet.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Search/SearchSet.cs b/src/Models/Models.Data/Search/SearchSet.cs
---- a/src/Models/Models.Data/Search/SearchSet.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Search/SearchSet.cs	2026-09-06 02:29:30.000000000 +0000
+--- a/src/Models/Models.Data/Search/SearchSet.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Search/SearchSet.cs	2026-09-06 03:37:04.000000000 +0000
 @@ -1,35 +1,35 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -31787,8 +31787,8 @@ diff -ruN a/src/Models/Models.Data/Search/SearchSet.cs b/src/Models/Models.Data/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Search/SearchSuggest.cs b/src/Models/Models.Data/Search/SearchSuggest.cs
---- a/src/Models/Models.Data/Search/SearchSuggest.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/Search/SearchSuggest.cs	2026-09-06 03:17:02.000000000 +0000
+--- a/src/Models/Models.Data/Search/SearchSuggest.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/Search/SearchSuggest.cs	2026-09-06 03:37:04.000000000 +0000
 @@ -1,55 +1,55 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -31901,8 +31901,8 @@ diff -ruN a/src/Models/Models.Data/Search/SearchSuggest.cs b/src/Models/Models.D
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/User/AccountInformation.cs b/src/Models/Models.Data/User/AccountInformation.cs
---- a/src/Models/Models.Data/User/AccountInformation.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/User/AccountInformation.cs	2026-09-06 03:17:02.000000000 +0000
+--- a/src/Models/Models.Data/User/AccountInformation.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/User/AccountInformation.cs	2026-09-06 03:37:05.000000000 +0000
 @@ -1,75 +1,75 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -32055,8 +32055,8 @@ diff -ruN a/src/Models/Models.Data/User/AccountInformation.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/User/RelationView.cs b/src/Models/Models.Data/User/RelationView.cs
---- a/src/Models/Models.Data/User/RelationView.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/User/RelationView.cs	2026-09-06 03:17:03.000000000 +0000
+--- a/src/Models/Models.Data/User/RelationView.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/User/RelationView.cs	2026-09-06 03:37:05.000000000 +0000
 @@ -1,35 +1,35 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -32111,7 +32111,7 @@ diff -ruN a/src/Models/Models.Data/User/RelationView.cs b/src/Models/Models.Data
 +        /// <param name="totalCount">总数.</param>
 +        public RelationView(
 +            IEnumerable<AccountInformation> accounts,
-+            int totalCount)
++            long totalCount)
 +        {
 +            Accounts = accounts;
 +            TotalCount = totalCount;
@@ -32129,8 +32129,8 @@ diff -ruN a/src/Models/Models.Data/User/RelationView.cs b/src/Models/Models.Data
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/User/RoleProfile.cs b/src/Models/Models.Data/User/RoleProfile.cs
---- a/src/Models/Models.Data/User/RoleProfile.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/User/RoleProfile.cs	2026-09-06 02:29:31.000000000 +0000
+--- a/src/Models/Models.Data/User/RoleProfile.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/User/RoleProfile.cs	2026-09-06 03:37:05.000000000 +0000
 @@ -1,56 +1,56 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -32245,8 +32245,8 @@ diff -ruN a/src/Models/Models.Data/User/RoleProfile.cs b/src/Models/Models.Data/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/User/UserInformation.cs b/src/Models/Models.Data/User/UserInformation.cs
---- a/src/Models/Models.Data/User/UserInformation.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/User/UserInformation.cs	2026-09-06 02:29:32.000000000 +0000
+--- a/src/Models/Models.Data/User/UserInformation.cs	2026-09-06 03:39:57.168560000 +0000
++++ b/src/Models/Models.Data/User/UserInformation.cs	2026-09-06 03:37:06.000000000 +0000
 @@ -1,22 +1,22 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -32293,8 +32293,8 @@ diff -ruN a/src/Models/Models.Data/User/UserInformation.cs b/src/Models/Models.D
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/User/UserProfile.cs b/src/Models/Models.Data/User/UserProfile.cs
---- a/src/Models/Models.Data/User/UserProfile.cs	2026-09-06 03:21:34.809560000 +0000
-+++ b/src/Models/Models.Data/User/UserProfile.cs	2026-09-06 02:29:32.000000000 +0000
+--- a/src/Models/Models.Data/User/UserProfile.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/User/UserProfile.cs	2026-09-06 03:37:06.000000000 +0000
 @@ -1,65 +1,65 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -32427,8 +32427,8 @@ diff -ruN a/src/Models/Models.Data/User/UserProfile.cs b/src/Models/Models.Data/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/User/UserSpaceView.cs b/src/Models/Models.Data/User/UserSpaceView.cs
---- a/src/Models/Models.Data/User/UserSpaceView.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/User/UserSpaceView.cs	2026-09-06 02:29:32.000000000 +0000
+--- a/src/Models/Models.Data/User/UserSpaceView.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/User/UserSpaceView.cs	2026-09-06 03:37:07.000000000 +0000
 @@ -1,42 +1,42 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -32515,8 +32515,8 @@ diff -ruN a/src/Models/Models.Data/User/UserSpaceView.cs b/src/Models/Models.Dat
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/InteractionVideoRecord.cs b/src/Models/Models.Data/Video/InteractionVideoRecord.cs
---- a/src/Models/Models.Data/Video/InteractionVideoRecord.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/InteractionVideoRecord.cs	2026-09-06 02:29:33.000000000 +0000
+--- a/src/Models/Models.Data/Video/InteractionVideoRecord.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/InteractionVideoRecord.cs	2026-09-06 03:37:07.000000000 +0000
 @@ -1,41 +1,41 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -32601,8 +32601,8 @@ diff -ruN a/src/Models/Models.Data/Video/InteractionVideoRecord.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/IVideoBase.cs b/src/Models/Models.Data/Video/IVideoBase.cs
---- a/src/Models/Models.Data/Video/IVideoBase.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/IVideoBase.cs	2026-09-06 02:29:33.000000000 +0000
+--- a/src/Models/Models.Data/Video/IVideoBase.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/IVideoBase.cs	2026-09-06 03:37:07.000000000 +0000
 @@ -1,15 +1,15 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -32635,8 +32635,8 @@ diff -ruN a/src/Models/Models.Data/Video/IVideoBase.cs b/src/Models/Models.Data/
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteFolder.cs b/src/Models/Models.Data/Video/VideoFavoriteFolder.cs
---- a/src/Models/Models.Data/Video/VideoFavoriteFolder.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoFavoriteFolder.cs	2026-09-06 03:17:04.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoFavoriteFolder.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoFavoriteFolder.cs	2026-09-06 03:37:08.000000000 +0000
 @@ -1,74 +1,74 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -32739,7 +32739,7 @@ diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteFolder.cs b/src/Models/Mod
 +            Image cover,
 +            UserProfile user,
 +            string description,
-+            int totalCount)
++            long totalCount)
 +        {
 +            Id = id;
 +            Title = title;
@@ -32787,8 +32787,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteFolder.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteFolderDetail.cs b/src/Models/Models.Data/Video/VideoFavoriteFolderDetail.cs
---- a/src/Models/Models.Data/Video/VideoFavoriteFolderDetail.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoFavoriteFolderDetail.cs	2026-09-06 02:29:34.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoFavoriteFolderDetail.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoFavoriteFolderDetail.cs	2026-09-06 03:37:08.000000000 +0000
 @@ -1,31 +1,31 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -32853,8 +32853,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteFolderDetail.cs b/src/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteFolderGroup.cs b/src/Models/Models.Data/Video/VideoFavoriteFolderGroup.cs
---- a/src/Models/Models.Data/Video/VideoFavoriteFolderGroup.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoFavoriteFolderGroup.cs	2026-09-06 02:29:34.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoFavoriteFolderGroup.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoFavoriteFolderGroup.cs	2026-09-06 03:37:09.000000000 +0000
 @@ -1,55 +1,55 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -32967,8 +32967,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteFolderGroup.cs b/src/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteSet.cs b/src/Models/Models.Data/Video/VideoFavoriteSet.cs
---- a/src/Models/Models.Data/Video/VideoFavoriteSet.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoFavoriteSet.cs	2026-09-06 02:29:34.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoFavoriteSet.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoFavoriteSet.cs	2026-09-06 03:37:09.000000000 +0000
 @@ -1,26 +1,26 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -33015,7 +33015,7 @@ diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteSet.cs b/src/Models/Models
 +        /// <param name="totalCount">收藏夹总数.</param>
 +        public VideoFavoriteSet(
 +            IEnumerable<VideoFavoriteFolder> items,
-+            int totalCount)
++            long totalCount)
 +        {
 +            Items = items;
 +            TotalCount = totalCount;
@@ -33023,8 +33023,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteSet.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteView.cs b/src/Models/Models.Data/Video/VideoFavoriteView.cs
---- a/src/Models/Models.Data/Video/VideoFavoriteView.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoFavoriteView.cs	2026-09-06 02:29:34.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoFavoriteView.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoFavoriteView.cs	2026-09-06 03:37:09.000000000 +0000
 @@ -1,35 +1,35 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -33097,8 +33097,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoFavoriteView.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoHistoryView.cs b/src/Models/Models.Data/Video/VideoHistoryView.cs
---- a/src/Models/Models.Data/Video/VideoHistoryView.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoHistoryView.cs	2026-09-06 02:29:35.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoHistoryView.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoHistoryView.cs	2026-09-06 03:37:10.000000000 +0000
 @@ -1,35 +1,35 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -33171,8 +33171,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoHistoryView.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoIdentifier.cs b/src/Models/Models.Data/Video/VideoIdentifier.cs
---- a/src/Models/Models.Data/Video/VideoIdentifier.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoIdentifier.cs	2026-09-06 02:29:35.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoIdentifier.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoIdentifier.cs	2026-09-06 03:37:10.000000000 +0000
 @@ -1,58 +1,58 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -33291,8 +33291,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoIdentifier.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoInformation.cs b/src/Models/Models.Data/Video/VideoInformation.cs
---- a/src/Models/Models.Data/Video/VideoInformation.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoInformation.cs	2026-09-06 02:29:35.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoInformation.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoInformation.cs	2026-09-06 03:37:10.000000000 +0000
 @@ -1,131 +1,131 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -33557,8 +33557,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoInformation.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoPartitionView.cs b/src/Models/Models.Data/Video/VideoPartitionView.cs
---- a/src/Models/Models.Data/Video/VideoPartitionView.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoPartitionView.cs	2026-09-06 02:29:36.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoPartitionView.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoPartitionView.cs	2026-09-06 03:37:11.000000000 +0000
 @@ -1,50 +1,50 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -33661,8 +33661,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoPartitionView.cs b/src/Models/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoPlayerView.cs b/src/Models/Models.Data/Video/VideoPlayerView.cs
---- a/src/Models/Models.Data/Video/VideoPlayerView.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoPlayerView.cs	2026-09-06 02:29:36.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoPlayerView.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoPlayerView.cs	2026-09-06 03:37:11.000000000 +0000
 @@ -1,99 +1,99 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -33863,8 +33863,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoPlayerView.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoSeason.cs b/src/Models/Models.Data/Video/VideoSeason.cs
---- a/src/Models/Models.Data/Video/VideoSeason.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoSeason.cs	2026-09-06 02:29:36.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoSeason.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoSeason.cs	2026-09-06 03:37:11.000000000 +0000
 @@ -1,49 +1,49 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -33965,8 +33965,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoSeason.cs b/src/Models/Models.Data
 +    }
 +}
 diff -ruN a/src/Models/Models.Data/Video/VideoSet.cs b/src/Models/Models.Data/Video/VideoSet.cs
---- a/src/Models/Models.Data/Video/VideoSet.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Data/Video/VideoSet.cs	2026-09-06 02:29:37.000000000 +0000
+--- a/src/Models/Models.Data/Video/VideoSet.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Data/Video/VideoSet.cs	2026-09-06 03:37:12.000000000 +0000
 @@ -1,26 +1,26 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -34013,7 +34013,7 @@ diff -ruN a/src/Models/Models.Data/Video/VideoSet.cs b/src/Models/Models.Data/Vi
 +        /// <param name="totalCount">视频总数.</param>
 +        public VideoSet(
 +            IEnumerable<VideoInformation> items,
-+            int totalCount)
++            long totalCount)
 +        {
 +            Items = items;
 +            TotalCount = totalCount;
@@ -34021,8 +34021,8 @@ diff -ruN a/src/Models/Models.Data/Video/VideoSet.cs b/src/Models/Models.Data/Vi
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/AvatarSize.cs b/src/Models/Models.Enums/App/AvatarSize.cs
---- a/src/Models/Models.Enums/App/AvatarSize.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Enums/App/AvatarSize.cs	2026-09-06 02:29:37.000000000 +0000
+--- a/src/Models/Models.Enums/App/AvatarSize.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Enums/App/AvatarSize.cs	2026-09-06 03:37:12.000000000 +0000
 @@ -1,35 +1,35 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -34095,8 +34095,8 @@ diff -ruN a/src/Models/Models.Enums/App/AvatarSize.cs b/src/Models/Models.Enums/
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/BackBehavior.cs b/src/Models/Models.Enums/App/BackBehavior.cs
---- a/src/Models/Models.Enums/App/BackBehavior.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Enums/App/BackBehavior.cs	2026-09-06 02:29:37.000000000 +0000
+--- a/src/Models/Models.Enums/App/BackBehavior.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Enums/App/BackBehavior.cs	2026-09-06 03:37:12.000000000 +0000
 @@ -1,40 +1,40 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -34179,8 +34179,8 @@ diff -ruN a/src/Models/Models.Enums/App/BackBehavior.cs b/src/Models/Models.Enum
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/DanmakuLocation.cs b/src/Models/Models.Enums/App/DanmakuLocation.cs
---- a/src/Models/Models.Enums/App/DanmakuLocation.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Enums/App/DanmakuLocation.cs	2026-09-06 02:29:38.000000000 +0000
+--- a/src/Models/Models.Enums/App/DanmakuLocation.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Enums/App/DanmakuLocation.cs	2026-09-06 03:37:13.000000000 +0000
 @@ -1,40 +1,40 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -34263,8 +34263,8 @@ diff -ruN a/src/Models/Models.Enums/App/DanmakuLocation.cs b/src/Models/Models.E
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/DecodeType.cs b/src/Models/Models.Enums/App/DecodeType.cs
---- a/src/Models/Models.Enums/App/DecodeType.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Enums/App/DecodeType.cs	2026-09-06 02:29:38.000000000 +0000
+--- a/src/Models/Models.Enums/App/DecodeType.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Enums/App/DecodeType.cs	2026-09-06 03:37:13.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -34317,8 +34317,8 @@ diff -ruN a/src/Models/Models.Enums/App/DecodeType.cs b/src/Models/Models.Enums/
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/FavoriteType.cs b/src/Models/Models.Enums/App/FavoriteType.cs
---- a/src/Models/Models.Enums/App/FavoriteType.cs	2026-09-06 03:21:34.810560000 +0000
-+++ b/src/Models/Models.Enums/App/FavoriteType.cs	2026-09-06 02:29:38.000000000 +0000
+--- a/src/Models/Models.Enums/App/FavoriteType.cs	2026-09-06 03:39:57.169560000 +0000
++++ b/src/Models/Models.Enums/App/FavoriteType.cs	2026-09-06 03:37:13.000000000 +0000
 @@ -1,30 +1,30 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -34381,8 +34381,8 @@ diff -ruN a/src/Models/Models.Enums/App/FavoriteType.cs b/src/Models/Models.Enum
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/FixedType.cs b/src/Models/Models.Enums/App/FixedType.cs
---- a/src/Models/Models.Enums/App/FixedType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/FixedType.cs	2026-09-06 02:29:39.000000000 +0000
+--- a/src/Models/Models.Enums/App/FixedType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/FixedType.cs	2026-09-06 03:37:13.000000000 +0000
 @@ -1,30 +1,30 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -34445,8 +34445,8 @@ diff -ruN a/src/Models/Models.Enums/App/FixedType.cs b/src/Models/Models.Enums/A
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/InfoType.cs b/src/Models/Models.Enums/App/InfoType.cs
---- a/src/Models/Models.Enums/App/InfoType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/InfoType.cs	2026-09-06 02:29:39.000000000 +0000
+--- a/src/Models/Models.Enums/App/InfoType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/InfoType.cs	2026-09-06 03:37:14.000000000 +0000
 @@ -1,30 +1,30 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -34509,8 +34509,8 @@ diff -ruN a/src/Models/Models.Enums/App/InfoType.cs b/src/Models/Models.Enums/Ap
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/LanguageNames.cs b/src/Models/Models.Enums/App/LanguageNames.cs
---- a/src/Models/Models.Enums/App/LanguageNames.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/LanguageNames.cs	2026-09-06 02:29:39.000000000 +0000
+--- a/src/Models/Models.Enums/App/LanguageNames.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/LanguageNames.cs	2026-09-06 03:37:14.000000000 +0000
 @@ -1,564 +1,564 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -35641,8 +35641,8 @@ diff -ruN a/src/Models/Models.Enums/App/LanguageNames.cs b/src/Models/Models.Enu
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/MessageType.cs b/src/Models/Models.Enums/App/MessageType.cs
---- a/src/Models/Models.Enums/App/MessageType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/MessageType.cs	2026-09-06 02:29:40.000000000 +0000
+--- a/src/Models/Models.Enums/App/MessageType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/MessageType.cs	2026-09-06 03:37:14.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -35695,8 +35695,8 @@ diff -ruN a/src/Models/Models.Enums/App/MessageType.cs b/src/Models/Models.Enums
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/NavigationType.cs b/src/Models/Models.Enums/App/NavigationType.cs
---- a/src/Models/Models.Enums/App/NavigationType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/NavigationType.cs	2026-09-06 02:29:40.000000000 +0000
+--- a/src/Models/Models.Enums/App/NavigationType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/NavigationType.cs	2026-09-06 03:37:15.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -35749,8 +35749,8 @@ diff -ruN a/src/Models/Models.Enums/App/NavigationType.cs b/src/Models/Models.En
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/PageIds.cs b/src/Models/Models.Enums/App/PageIds.cs
---- a/src/Models/Models.Enums/App/PageIds.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/PageIds.cs	2026-09-06 02:29:40.000000000 +0000
+--- a/src/Models/Models.Enums/App/PageIds.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/PageIds.cs	2026-09-06 03:37:15.000000000 +0000
 @@ -1,190 +1,190 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36133,8 +36133,8 @@ diff -ruN a/src/Models/Models.Enums/App/PageIds.cs b/src/Models/Models.Enums/App
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/PartitionType.cs b/src/Models/Models.Enums/App/PartitionType.cs
---- a/src/Models/Models.Enums/App/PartitionType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/PartitionType.cs	2026-09-06 02:29:41.000000000 +0000
+--- a/src/Models/Models.Enums/App/PartitionType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/PartitionType.cs	2026-09-06 03:37:15.000000000 +0000
 @@ -1,20 +1,20 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36177,8 +36177,8 @@ diff -ruN a/src/Models/Models.Enums/App/PartitionType.cs b/src/Models/Models.Enu
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/PlayerDisplayMode.cs b/src/Models/Models.Enums/App/PlayerDisplayMode.cs
---- a/src/Models/Models.Enums/App/PlayerDisplayMode.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/PlayerDisplayMode.cs	2026-09-06 02:29:41.000000000 +0000
+--- a/src/Models/Models.Enums/App/PlayerDisplayMode.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/PlayerDisplayMode.cs	2026-09-06 03:37:16.000000000 +0000
 @@ -1,30 +1,30 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36241,8 +36241,8 @@ diff -ruN a/src/Models/Models.Enums/App/PlayerDisplayMode.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/PlayerManipulationType.cs b/src/Models/Models.Enums/App/PlayerManipulationType.cs
---- a/src/Models/Models.Enums/App/PlayerManipulationType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/PlayerManipulationType.cs	2026-09-06 02:29:41.000000000 +0000
+--- a/src/Models/Models.Enums/App/PlayerManipulationType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/PlayerManipulationType.cs	2026-09-06 03:37:16.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36295,8 +36295,8 @@ diff -ruN a/src/Models/Models.Enums/App/PlayerManipulationType.cs b/src/Models/M
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/PlayerStatus.cs b/src/Models/Models.Enums/App/PlayerStatus.cs
---- a/src/Models/Models.Enums/App/PlayerStatus.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/PlayerStatus.cs	2026-09-06 02:29:41.000000000 +0000
+--- a/src/Models/Models.Enums/App/PlayerStatus.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/PlayerStatus.cs	2026-09-06 03:37:16.000000000 +0000
 @@ -1,45 +1,45 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36389,8 +36389,8 @@ diff -ruN a/src/Models/Models.Enums/App/PlayerStatus.cs b/src/Models/Models.Enum
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/PreferCodec.cs b/src/Models/Models.Enums/App/PreferCodec.cs
---- a/src/Models/Models.Enums/App/PreferCodec.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/PreferCodec.cs	2026-09-06 02:29:42.000000000 +0000
+--- a/src/Models/Models.Enums/App/PreferCodec.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/PreferCodec.cs	2026-09-06 03:37:16.000000000 +0000
 @@ -1,30 +1,30 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36453,8 +36453,8 @@ diff -ruN a/src/Models/Models.Enums/App/PreferCodec.cs b/src/Models/Models.Enums
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/RelatedUserType.cs b/src/Models/Models.Enums/App/RelatedUserType.cs
---- a/src/Models/Models.Enums/App/RelatedUserType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/RelatedUserType.cs	2026-09-06 02:29:42.000000000 +0000
+--- a/src/Models/Models.Enums/App/RelatedUserType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/RelatedUserType.cs	2026-09-06 03:37:17.000000000 +0000
 @@ -1,20 +1,20 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36497,8 +36497,8 @@ diff -ruN a/src/Models/Models.Enums/App/RelatedUserType.cs b/src/Models/Models.E
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/SettingNames.cs b/src/Models/Models.Enums/App/SettingNames.cs
---- a/src/Models/Models.Enums/App/SettingNames.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/SettingNames.cs	2026-09-06 02:29:42.000000000 +0000
+--- a/src/Models/Models.Enums/App/SettingNames.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/SettingNames.cs	2026-09-06 03:37:17.000000000 +0000
 @@ -1,89 +1,89 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36679,8 +36679,8 @@ diff -ruN a/src/Models/Models.Enums/App/SettingNames.cs b/src/Models/Models.Enum
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/SubtitleConvertType.cs b/src/Models/Models.Enums/App/SubtitleConvertType.cs
---- a/src/Models/Models.Enums/App/SubtitleConvertType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/SubtitleConvertType.cs	2026-09-06 02:29:43.000000000 +0000
+--- a/src/Models/Models.Enums/App/SubtitleConvertType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/SubtitleConvertType.cs	2026-09-06 03:37:17.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36733,8 +36733,8 @@ diff -ruN a/src/Models/Models.Enums/App/SubtitleConvertType.cs b/src/Models/Mode
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/ToolboxItemType.cs b/src/Models/Models.Enums/App/ToolboxItemType.cs
---- a/src/Models/Models.Enums/App/ToolboxItemType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/ToolboxItemType.cs	2026-09-06 02:29:43.000000000 +0000
+--- a/src/Models/Models.Enums/App/ToolboxItemType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/ToolboxItemType.cs	2026-09-06 03:37:18.000000000 +0000
 @@ -1,20 +1,20 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36777,8 +36777,8 @@ diff -ruN a/src/Models/Models.Enums/App/ToolboxItemType.cs b/src/Models/Models.E
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/App/VideoIdType.cs b/src/Models/Models.Enums/App/VideoIdType.cs
---- a/src/Models/Models.Enums/App/VideoIdType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/App/VideoIdType.cs	2026-09-06 02:29:43.000000000 +0000
+--- a/src/Models/Models.Enums/App/VideoIdType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/App/VideoIdType.cs	2026-09-06 03:37:18.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36831,8 +36831,8 @@ diff -ruN a/src/Models/Models.Enums/App/VideoIdType.cs b/src/Models/Models.Enums
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Authorize/AuthorizeResultStatus.cs b/src/Models/Models.Enums/Authorize/AuthorizeResultStatus.cs
---- a/src/Models/Models.Enums/Authorize/AuthorizeResultStatus.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/Authorize/AuthorizeResultStatus.cs	2026-09-06 02:29:44.000000000 +0000
+--- a/src/Models/Models.Enums/Authorize/AuthorizeResultStatus.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/Authorize/AuthorizeResultStatus.cs	2026-09-06 03:37:18.000000000 +0000
 @@ -1,45 +1,45 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36925,8 +36925,8 @@ diff -ruN a/src/Models/Models.Enums/Authorize/AuthorizeResultStatus.cs b/src/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Authorize/AuthorizeState.cs b/src/Models/Models.Enums/Authorize/AuthorizeState.cs
---- a/src/Models/Models.Enums/Authorize/AuthorizeState.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/Authorize/AuthorizeState.cs	2026-09-06 02:29:44.000000000 +0000
+--- a/src/Models/Models.Enums/Authorize/AuthorizeState.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/Authorize/AuthorizeState.cs	2026-09-06 03:37:19.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -36979,8 +36979,8 @@ diff -ruN a/src/Models/Models.Enums/Authorize/AuthorizeState.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Authorize/LoginType.cs b/src/Models/Models.Enums/Authorize/LoginType.cs
---- a/src/Models/Models.Enums/Authorize/LoginType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/Authorize/LoginType.cs	2026-09-06 02:29:44.000000000 +0000
+--- a/src/Models/Models.Enums/Authorize/LoginType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/Authorize/LoginType.cs	2026-09-06 03:37:19.000000000 +0000
 @@ -1,20 +1,20 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37023,8 +37023,8 @@ diff -ruN a/src/Models/Models.Enums/Authorize/LoginType.cs b/src/Models/Models.E
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Authorize/QRCodeStatus.cs b/src/Models/Models.Enums/Authorize/QRCodeStatus.cs
---- a/src/Models/Models.Enums/Authorize/QRCodeStatus.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/Authorize/QRCodeStatus.cs	2026-09-06 02:29:45.000000000 +0000
+--- a/src/Models/Models.Enums/Authorize/QRCodeStatus.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/Authorize/QRCodeStatus.cs	2026-09-06 03:37:19.000000000 +0000
 @@ -1,30 +1,30 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37087,8 +37087,8 @@ diff -ruN a/src/Models/Models.Enums/Authorize/QRCodeStatus.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Authorize/RequestClientType.cs b/src/Models/Models.Enums/Authorize/RequestClientType.cs
---- a/src/Models/Models.Enums/Authorize/RequestClientType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/Authorize/RequestClientType.cs	2026-09-06 02:29:45.000000000 +0000
+--- a/src/Models/Models.Enums/Authorize/RequestClientType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/Authorize/RequestClientType.cs	2026-09-06 03:37:20.000000000 +0000
 @@ -1,30 +1,30 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37151,8 +37151,8 @@ diff -ruN a/src/Models/Models.Enums/Authorize/RequestClientType.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/ArticleSortType.cs b/src/Models/Models.Enums/Bili/ArticleSortType.cs
---- a/src/Models/Models.Enums/Bili/ArticleSortType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/Bili/ArticleSortType.cs	2026-09-06 02:29:45.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/ArticleSortType.cs	2026-09-06 03:39:57.170560000 +0000
++++ b/src/Models/Models.Enums/Bili/ArticleSortType.cs	2026-09-06 03:37:20.000000000 +0000
 @@ -1,40 +1,40 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37235,8 +37235,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/ArticleSortType.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/CommentSortType.cs b/src/Models/Models.Enums/Bili/CommentSortType.cs
---- a/src/Models/Models.Enums/Bili/CommentSortType.cs	2026-09-06 03:21:34.811560000 +0000
-+++ b/src/Models/Models.Enums/Bili/CommentSortType.cs	2026-09-06 02:29:46.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/CommentSortType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Bili/CommentSortType.cs	2026-09-06 03:37:20.000000000 +0000
 @@ -1,20 +1,20 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37279,8 +37279,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/CommentSortType.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/CommentType.cs b/src/Models/Models.Enums/Bili/CommentType.cs
---- a/src/Models/Models.Enums/Bili/CommentType.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Bili/CommentType.cs	2026-09-06 02:29:46.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/CommentType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Bili/CommentType.cs	2026-09-06 03:37:20.000000000 +0000
 @@ -1,45 +1,45 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37373,8 +37373,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/CommentType.cs b/src/Models/Models.Enum
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/FavoriteResult.cs b/src/Models/Models.Enums/Bili/FavoriteResult.cs
---- a/src/Models/Models.Enums/Bili/FavoriteResult.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Bili/FavoriteResult.cs	2026-09-06 02:29:46.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/FavoriteResult.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Bili/FavoriteResult.cs	2026-09-06 03:37:21.000000000 +0000
 @@ -1,50 +1,50 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37477,8 +37477,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/FavoriteResult.cs b/src/Models/Models.E
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/LiveMessageType.cs b/src/Models/Models.Enums/Bili/LiveMessageType.cs
---- a/src/Models/Models.Enums/Bili/LiveMessageType.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Bili/LiveMessageType.cs	2026-09-06 02:29:47.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/LiveMessageType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Bili/LiveMessageType.cs	2026-09-06 03:37:21.000000000 +0000
 @@ -1,75 +1,75 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37631,8 +37631,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/LiveMessageType.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/PgcModuleType.cs b/src/Models/Models.Enums/Bili/PgcModuleType.cs
---- a/src/Models/Models.Enums/Bili/PgcModuleType.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Bili/PgcModuleType.cs	2026-09-06 02:29:47.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/PgcModuleType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Bili/PgcModuleType.cs	2026-09-06 03:37:21.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37685,8 +37685,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/PgcModuleType.cs b/src/Models/Models.En
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/PgcType.cs b/src/Models/Models.Enums/Bili/PgcType.cs
---- a/src/Models/Models.Enums/Bili/PgcType.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Bili/PgcType.cs	2026-09-06 02:29:47.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/PgcType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Bili/PgcType.cs	2026-09-06 03:37:22.000000000 +0000
 @@ -1,35 +1,35 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37759,8 +37759,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/PgcType.cs b/src/Models/Models.Enums/Bi
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/PlayerSectionType.cs b/src/Models/Models.Enums/Bili/PlayerSectionType.cs
---- a/src/Models/Models.Enums/Bili/PlayerSectionType.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Bili/PlayerSectionType.cs	2026-09-06 02:29:48.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/PlayerSectionType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Bili/PlayerSectionType.cs	2026-09-06 03:37:22.000000000 +0000
 @@ -1,55 +1,55 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37873,8 +37873,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/PlayerSectionType.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/RelationType.cs b/src/Models/Models.Enums/Bili/RelationType.cs
---- a/src/Models/Models.Enums/Bili/RelationType.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Bili/RelationType.cs	2026-09-06 02:29:48.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/RelationType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Bili/RelationType.cs	2026-09-06 03:37:22.000000000 +0000
 @@ -1,20 +1,20 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -37917,8 +37917,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/RelationType.cs b/src/Models/Models.Enu
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/SearchModuleType.cs b/src/Models/Models.Enums/Bili/SearchModuleType.cs
---- a/src/Models/Models.Enums/Bili/SearchModuleType.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Bili/SearchModuleType.cs	2026-09-06 02:29:48.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/SearchModuleType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Bili/SearchModuleType.cs	2026-09-06 03:37:23.000000000 +0000
 @@ -1,40 +1,40 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -38001,8 +38001,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/SearchModuleType.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/VideoSortType.cs b/src/Models/Models.Enums/Bili/VideoSortType.cs
---- a/src/Models/Models.Enums/Bili/VideoSortType.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Bili/VideoSortType.cs	2026-09-06 02:29:49.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/VideoSortType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Bili/VideoSortType.cs	2026-09-06 03:37:23.000000000 +0000
 @@ -1,40 +1,40 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -38085,8 +38085,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/VideoSortType.cs b/src/Models/Models.En
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Bili/VideoType.cs b/src/Models/Models.Enums/Bili/VideoType.cs
---- a/src/Models/Models.Enums/Bili/VideoType.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Bili/VideoType.cs	2026-09-06 02:29:49.000000000 +0000
+--- a/src/Models/Models.Enums/Bili/VideoType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Bili/VideoType.cs	2026-09-06 03:37:23.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -38139,8 +38139,8 @@ diff -ruN a/src/Models/Models.Enums/Bili/VideoType.cs b/src/Models/Models.Enums/
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Community/DynamicType.cs b/src/Models/Models.Enums/Community/DynamicType.cs
---- a/src/Models/Models.Enums/Community/DynamicType.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Community/DynamicType.cs	2026-09-06 02:29:49.000000000 +0000
+--- a/src/Models/Models.Enums/Community/DynamicType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Community/DynamicType.cs	2026-09-06 03:37:23.000000000 +0000
 @@ -1,45 +1,45 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -38233,8 +38233,8 @@ diff -ruN a/src/Models/Models.Enums/Community/DynamicType.cs b/src/Models/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Community/UserRelationStatus.cs b/src/Models/Models.Enums/Community/UserRelationStatus.cs
---- a/src/Models/Models.Enums/Community/UserRelationStatus.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Community/UserRelationStatus.cs	2026-09-06 02:29:50.000000000 +0000
+--- a/src/Models/Models.Enums/Community/UserRelationStatus.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Community/UserRelationStatus.cs	2026-09-06 03:37:24.000000000 +0000
 @@ -1,35 +1,35 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -38307,7 +38307,7 @@ diff -ruN a/src/Models/Models.Enums/Community/UserRelationStatus.cs b/src/Models
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Models.Enums.csproj b/src/Models/Models.Enums/Models.Enums.csproj
---- a/src/Models/Models.Enums/Models.Enums.csproj	2026-09-06 03:21:34.812560000 +0000
+--- a/src/Models/Models.Enums/Models.Enums.csproj	2026-09-06 03:39:57.171560000 +0000
 +++ b/src/Models/Models.Enums/Models.Enums.csproj	2026-09-06 01:22:30.000000000 +0000
 @@ -1,9 +1,9 @@
 -<Project Sdk="Microsoft.NET.Sdk">
@@ -38329,8 +38329,8 @@ diff -ruN a/src/Models/Models.Enums/Models.Enums.csproj b/src/Models/Models.Enum
 +
 +</Project>
 diff -ruN a/src/Models/Models.Enums/Player/PlayedProgressStatus.cs b/src/Models/Models.Enums/Player/PlayedProgressStatus.cs
---- a/src/Models/Models.Enums/Player/PlayedProgressStatus.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Player/PlayedProgressStatus.cs	2026-09-06 02:29:50.000000000 +0000
+--- a/src/Models/Models.Enums/Player/PlayedProgressStatus.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Player/PlayedProgressStatus.cs	2026-09-06 03:37:24.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -38383,8 +38383,8 @@ diff -ruN a/src/Models/Models.Enums/Player/PlayedProgressStatus.cs b/src/Models/
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Player/PlayerType.cs b/src/Models/Models.Enums/Player/PlayerType.cs
---- a/src/Models/Models.Enums/Player/PlayerType.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Player/PlayerType.cs	2026-09-06 02:29:50.000000000 +0000
+--- a/src/Models/Models.Enums/Player/PlayerType.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Player/PlayerType.cs	2026-09-06 03:37:24.000000000 +0000
 @@ -1,20 +1,20 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -38427,8 +38427,8 @@ diff -ruN a/src/Models/Models.Enums/Player/PlayerType.cs b/src/Models/Models.Enu
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Player/PreferQuality.cs b/src/Models/Models.Enums/Player/PreferQuality.cs
---- a/src/Models/Models.Enums/Player/PreferQuality.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Player/PreferQuality.cs	2026-09-06 02:29:51.000000000 +0000
+--- a/src/Models/Models.Enums/Player/PreferQuality.cs	2026-09-06 03:39:57.171560000 +0000
++++ b/src/Models/Models.Enums/Player/PreferQuality.cs	2026-09-06 03:37:25.000000000 +0000
 @@ -1,25 +1,25 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -38481,8 +38481,8 @@ diff -ruN a/src/Models/Models.Enums/Player/PreferQuality.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Workspace/FluentSymbol.cs b/src/Models/Models.Enums/Workspace/FluentSymbol.cs
---- a/src/Models/Models.Enums/Workspace/FluentSymbol.cs	2026-09-06 03:21:34.812560000 +0000
-+++ b/src/Models/Models.Enums/Workspace/FluentSymbol.cs	2026-09-06 02:29:51.000000000 +0000
+--- a/src/Models/Models.Enums/Workspace/FluentSymbol.cs	2026-09-06 03:39:57.172560000 +0000
++++ b/src/Models/Models.Enums/Workspace/FluentSymbol.cs	2026-09-06 03:37:25.000000000 +0000
 @@ -1,2151 +1,2151 @@
 -﻿// <auto-generated />
 -// From https://github.com/davidxuang/FluentIcons/blob/master/FluentIcons.Common/Symbol.cs
@@ -42787,8 +42787,8 @@ diff -ruN a/src/Models/Models.Enums/Workspace/FluentSymbol.cs b/src/Models/Model
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Workspace/LaunchType.cs b/src/Models/Models.Enums/Workspace/LaunchType.cs
---- a/src/Models/Models.Enums/Workspace/LaunchType.cs	2026-09-06 03:21:34.813560000 +0000
-+++ b/src/Models/Models.Enums/Workspace/LaunchType.cs	2026-09-06 02:29:51.000000000 +0000
+--- a/src/Models/Models.Enums/Workspace/LaunchType.cs	2026-09-06 03:39:57.172560000 +0000
++++ b/src/Models/Models.Enums/Workspace/LaunchType.cs	2026-09-06 03:37:25.000000000 +0000
 @@ -1,20 +1,20 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -42831,8 +42831,8 @@ diff -ruN a/src/Models/Models.Enums/Workspace/LaunchType.cs b/src/Models/Models.
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Workspace/NavigateTarget.cs b/src/Models/Models.Enums/Workspace/NavigateTarget.cs
---- a/src/Models/Models.Enums/Workspace/NavigateTarget.cs	2026-09-06 03:21:34.813560000 +0000
-+++ b/src/Models/Models.Enums/Workspace/NavigateTarget.cs	2026-09-06 02:29:52.000000000 +0000
+--- a/src/Models/Models.Enums/Workspace/NavigateTarget.cs	2026-09-06 03:39:57.172560000 +0000
++++ b/src/Models/Models.Enums/Workspace/NavigateTarget.cs	2026-09-06 03:37:26.000000000 +0000
 @@ -1,41 +1,41 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -42917,8 +42917,8 @@ diff -ruN a/src/Models/Models.Enums/Workspace/NavigateTarget.cs b/src/Models/Mod
 +    }
 +}
 diff -ruN a/src/Models/Models.Enums/Workspace/StartupPosition.cs b/src/Models/Models.Enums/Workspace/StartupPosition.cs
---- a/src/Models/Models.Enums/Workspace/StartupPosition.cs	2026-09-06 03:21:34.813560000 +0000
-+++ b/src/Models/Models.Enums/Workspace/StartupPosition.cs	2026-09-06 02:29:52.000000000 +0000
+--- a/src/Models/Models.Enums/Workspace/StartupPosition.cs	2026-09-06 03:39:57.172560000 +0000
++++ b/src/Models/Models.Enums/Workspace/StartupPosition.cs	2026-09-06 03:37:26.000000000 +0000
 @@ -1,45 +1,45 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -43011,8 +43011,8 @@ diff -ruN a/src/Models/Models.Enums/Workspace/StartupPosition.cs b/src/Models/Mo
 +    }
 +}
 diff -ruN a/src/Models/Models.gRPC/Buvid.cs b/src/Models/Models.gRPC/Buvid.cs
---- a/src/Models/Models.gRPC/Buvid.cs	2026-09-06 03:21:34.813560000 +0000
-+++ b/src/Models/Models.gRPC/Buvid.cs	2026-09-06 02:29:53.000000000 +0000
+--- a/src/Models/Models.gRPC/Buvid.cs	2026-09-06 03:39:57.172560000 +0000
++++ b/src/Models/Models.gRPC/Buvid.cs	2026-09-06 03:37:27.000000000 +0000
 @@ -1,57 +1,57 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -43129,8 +43129,8 @@ diff -ruN a/src/Models/Models.gRPC/Buvid.cs b/src/Models/Models.gRPC/Buvid.cs
 +    }
 +}
 diff -ruN a/src/Models/Models.gRPC/GRPCConfig.cs b/src/Models/Models.gRPC/GRPCConfig.cs
---- a/src/Models/Models.gRPC/GRPCConfig.cs	2026-09-06 03:21:34.813560000 +0000
-+++ b/src/Models/Models.gRPC/GRPCConfig.cs	2026-09-06 02:29:53.000000000 +0000
+--- a/src/Models/Models.gRPC/GRPCConfig.cs	2026-09-06 03:39:57.172560000 +0000
++++ b/src/Models/Models.gRPC/GRPCConfig.cs	2026-09-06 03:37:28.000000000 +0000
 @@ -1,216 +1,216 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -43565,7 +43565,7 @@ diff -ruN a/src/Models/Models.gRPC/GRPCConfig.cs b/src/Models/Models.gRPC/GRPCCo
 +}
 +#pragma warning restore SA1300 // Element should begin with upper-case letter
 diff -ruN a/src/Models/Models.gRPC/Models.gRPC.csproj b/src/Models/Models.gRPC/Models.gRPC.csproj
---- a/src/Models/Models.gRPC/Models.gRPC.csproj	2026-09-06 03:21:34.813560000 +0000
+--- a/src/Models/Models.gRPC/Models.gRPC.csproj	2026-09-06 03:39:57.172560000 +0000
 +++ b/src/Models/Models.gRPC/Models.gRPC.csproj	2026-09-06 01:22:31.000000000 +0000
 @@ -1,89 +1,89 @@
 -﻿<Project Sdk="Microsoft.NET.Sdk">
@@ -43747,7 +43747,7 @@ diff -ruN a/src/Models/Models.gRPC/Models.gRPC.csproj b/src/Models/Models.gRPC/M
 +
 +</Project>
 diff -ruN a/src/Models/Models.Workspace/Models.Workspace.csproj b/src/Models/Models.Workspace/Models.Workspace.csproj
---- a/src/Models/Models.Workspace/Models.Workspace.csproj	2026-09-06 03:21:34.813560000 +0000
+--- a/src/Models/Models.Workspace/Models.Workspace.csproj	2026-09-06 03:39:57.172560000 +0000
 +++ b/src/Models/Models.Workspace/Models.Workspace.csproj	2026-09-06 01:22:30.000000000 +0000
 @@ -1,11 +1,11 @@
 -<Project Sdk="Microsoft.NET.Sdk">
@@ -43773,8 +43773,8 @@ diff -ruN a/src/Models/Models.Workspace/Models.Workspace.csproj b/src/Models/Mod
 +
 +</Project>
 diff -ruN a/src/Models/Models.Workspace/NavigateItem.cs b/src/Models/Models.Workspace/NavigateItem.cs
---- a/src/Models/Models.Workspace/NavigateItem.cs	2026-09-06 03:21:34.813560000 +0000
-+++ b/src/Models/Models.Workspace/NavigateItem.cs	2026-09-06 02:29:52.000000000 +0000
+--- a/src/Models/Models.Workspace/NavigateItem.cs	2026-09-06 03:39:57.172560000 +0000
++++ b/src/Models/Models.Workspace/NavigateItem.cs	2026-09-06 03:37:26.000000000 +0000
 @@ -1,46 +1,46 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -43869,8 +43869,8 @@ diff -ruN a/src/Models/Models.Workspace/NavigateItem.cs b/src/Models/Models.Work
 +    }
 +}
 diff -ruN a/src/Models/Models.Workspace/QuickTopic.cs b/src/Models/Models.Workspace/QuickTopic.cs
---- a/src/Models/Models.Workspace/QuickTopic.cs	2026-09-06 03:21:34.813560000 +0000
-+++ b/src/Models/Models.Workspace/QuickTopic.cs	2026-09-06 02:29:53.000000000 +0000
+--- a/src/Models/Models.Workspace/QuickTopic.cs	2026-09-06 03:39:57.172560000 +0000
++++ b/src/Models/Models.Workspace/QuickTopic.cs	2026-09-06 03:37:27.000000000 +0000
 @@ -1,47 +1,47 @@
 -﻿// Copyright (c) Richasy. All rights reserved.
 -
@@ -43967,7 +43967,7 @@ diff -ruN a/src/Models/Models.Workspace/QuickTopic.cs b/src/Models/Models.Worksp
 +    }
 +}
 diff -ruN a/src/ViewModels/ViewModels.Workspace/ViewModels.Workspace.csproj b/src/ViewModels/ViewModels.Workspace/ViewModels.Workspace.csproj
---- a/src/ViewModels/ViewModels.Workspace/ViewModels.Workspace.csproj	2026-09-06 03:21:34.842560000 +0000
+--- a/src/ViewModels/ViewModels.Workspace/ViewModels.Workspace.csproj	2026-09-06 03:39:57.200560000 +0000
 +++ b/src/ViewModels/ViewModels.Workspace/ViewModels.Workspace.csproj	2026-09-06 01:22:33.000000000 +0000
 @@ -1,24 +1,24 @@
 -﻿<Project Sdk="Microsoft.NET.Sdk">
@@ -44019,7 +44019,7 @@ diff -ruN a/src/ViewModels/ViewModels.Workspace/ViewModels.Workspace.csproj b/sr
 +  </ItemGroup>
 +</Project>
 diff -ruN a/Uwp.props b/Uwp.props
---- a/Uwp.props	2026-09-06 03:21:34.737560000 +0000
+--- a/Uwp.props	2026-09-06 03:39:57.099560000 +0000
 +++ b/Uwp.props	2026-09-05 10:51:17.000000000 +0000
 @@ -8,7 +8,7 @@
      <AppDesignerFolder>Properties</AppDesignerFolder>
